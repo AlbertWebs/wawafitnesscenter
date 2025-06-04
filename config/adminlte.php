@@ -315,6 +315,21 @@ return [
             'text' => 'search',
         ],
         [
+            'text' => 'Categories',
+            'url'  => 'admin/categories',
+            'icon' => 'fas fa-list',
+        ],
+        [
+            'text' => 'Massage Chairs',
+            'url'  => 'admin/massage-chairs',
+            'icon' => 'fas fa-chair',
+        ],
+        [
+            'text' => 'Blogs',
+            'url'  => 'admin/blogs',
+            'icon' => 'fas fa-blog',
+        ],
+        [
             'text' => 'blog',
             'url' => 'admin/blog',
             'can' => 'manage-blog',
@@ -379,6 +394,11 @@ return [
             'text' => 'Site Settings',
             'url'  => 'admin/site-settings',
             'icon' => 'fas fa-cogs',
+        ],
+        [
+            'text' => 'Services',
+            'url'  => 'admin/services',
+            'icon' => 'fas fa-concierge-bell',
         ],
         ['header' => 'labels'],
         [

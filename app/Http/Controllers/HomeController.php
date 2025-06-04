@@ -16,4 +16,16 @@ class HomeController extends Controller
         $categories = Category::all();
         return view('front.index', compact('settings', 'chairs', 'categories'));
     }
+
+    public function about(){
+        $settings = SiteSetting::first();
+        return view('front.about', compact('settings'));
+    }
+
+    public function massageChairs($slug){
+        $settings = SiteSetting::first();
+        $Category = Category::where('slug', $slug)->first();
+        $chairs = MassageChair::where('category_id', $Category->id)->get(); 
+        return view('front.massage_chairs', compact('settings', 'chairs','Category'));
+    }
 }

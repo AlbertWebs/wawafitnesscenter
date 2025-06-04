@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-  
+ 
    <head>
-      <meta charset="utf-8">
+           <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="author" content="Designekta Studios">
       <meta name="robots" content="INDEX,FOLLOW">
@@ -92,23 +92,23 @@
       <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('uploads/favicon.png') }}">
       <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('uploads/favicon.png') }}">
 
-      
-      <link rel="manifest" href="{{ asset('theme/assets/img/favicons/manifest.json') }}">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="{{ asset('theme/assets/img/favicons/ms-icon-144x144.png') }}">
-      <meta name="theme-color" content="#ffffff">
       <link rel="preconnect" href="https://fonts.googleapis.com/">
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Outfit:wght@100..900&amp;family=Saira:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="/theme/assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/fontawesome.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/magnific-popup.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/swiper-bundle.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/style.css">
+      <link rel="stylesheet" href="{{asset('theme/assets/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{asset('theme/assets/css/fontawesome.min.css')}}">
+      <link rel="stylesheet" href="{{asset('theme/assets/css/magnific-popup.min.css')}}">
+      <link rel="stylesheet" href="{{asset('theme/assets/css/swiper-bundle.min.css')}}">
+      <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
    </head>
    <body>
-      
-      <div class="preloader">
+      <div class="color-scheme-wrap active">
+         <button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+         <h4 class="color-scheme-wrap-title"><i class="far fa-palette me-2"></i>Style Swicher</h4>
+         <div class="color-switch-btns"><button data-color="#3E66F3"><i class="fa-solid fa-droplet"></i></button> <button data-color="#684DF4"><i class="fa-solid fa-droplet"></i></button> <button data-color="#008080"><i class="fa-solid fa-droplet"></i></button> <button data-color="#323F7C"><i class="fa-solid fa-droplet"></i></button> <button data-color="#FC3737"><i class="fa-solid fa-droplet"></i></button> <button data-color="#8a2be2"><i class="fa-solid fa-droplet"></i></button></div>
+         <a href="https://themeforest.net/user/themeholy" class="th-btn text-center w-100"><i class="fa fa-shopping-cart me-2"></i> Purchase</a>
+      </div>
+       <div class="preloader">
          <button class="th-btn preloaderCls">Cancel Preloader</button>
          <div class="preloader-inner">
             <img src="{{ asset('uploads/logo.png') }}" alt="img">
@@ -119,8 +119,7 @@
             </div>
          </div>
       </div>
-      
-    
+     
       <div class="popup-search-box d-none d-lg-block">
          <button class="searchClose"><i class="fal fa-times"></i></button>
          <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i class="fal fa-search"></i></button></form>
@@ -128,73 +127,50 @@
       <div class="th-menu-wrapper">
          <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo"><a href="{{url('/')}}"><img src="/uploads/logo.png" alt="Wawa Fitness Center"></a></div>
+            <div class="mobile-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center"></a></div>
             <div class="th-mobile-menu">
-               @include('front.partials.menu')
+              @include('front.partials.menu')
             </div>
          </div>
       </div>
-      <header class="th-header header-layout1 header-absolute">
-         <div class="container">
-            <div class="menu-area">
-               <div class="menu-top">
-                  <div class="container">
-                     <div class="row align-items-center justify-content-center justify-content-sm-between">
-                        <div class="col-auto">
-                           <div class="header-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="WFC "></a></div>
-                        </div>
-                        <div class="col-auto d-none d-sm-block">
-                           <div class="header-info-wrap">
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-envelope"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Mail</span>
-                                    <p class="header-info_link"><a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a></p>
-                                 </div>
-                              </div>
-                              <div class="divided"></div>
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-location-dot"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Address</span>
-                                    <p class="header-info_link">Lunar Amusement Park, Kiambu Rd, Kiambu</p>
-                                 </div>
-                              </div>
-                                 <div class="divided"></div>
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-location-dot"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Address</span>
-                                    <p class="header-info_link">Lunar Amusement Park, Kiambu Rd, Kiambu</p>
-                                 </div>
-                              </div>
-                             
-                           </div>
-                        </div>
-                        <div class="col-auto">
-                           <div class="header-button">
-                              <form class="search-form"><input type="text" placeholder="Search..."> <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button></form>
-                             
-                           </div>
-                        </div>
+      <header class="th-header header-layout2">
+         <div class="header-top">
+            <div class="container">
+               <div class="row gy-2 justify-content-center justify-content-lg-between align-items-center">
+                  <div class="col-auto">
+                     <div class="header-links">
+                        <ul>
+                           <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@wawafitnesscenter.com">info@wawafitnesscenter.com</a></li>
+                           <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span>Lunar Amusement Park, Kimabu Rd, Kiambu</span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-auto">
+                     <div class="header-button">
+                        <a href="{{route('contact')}}" class="th-btn"><img style="width:20px" src="{{asset('theme/assets/img/icon/cursor.svg')}}" alt="">Visit Us today</a>
+                        <form class="search-form"><input type="text" placeholder="Search..."> <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button></form>
+                       
                      </div>
                   </div>
                </div>
-               <div class="sticky-wrapper">
-                  <div class="container">
-                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                           <div class="header-wrapp">
-                              <div class="header-logo style1"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="WFC "></a></div>
-                              <nav class="main-menu style2 d-none d-lg-inline-block">
-                                 @include('front.partials.menu')
-                              </nav>
-                              <a href="{{route('contact')}}" class="th-btn style2">Make Appointment</a>
-                           </div>
-                        </div>
-                        <div class="col-auto">
-                           <div class="header-button d-none d-lg-block"><a href="{{route('contact')}}" class="th-btn style2">Make Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> <a href="{{route('contact')}}" class="th-btn"><img style="width:20px" src="{{asset('theme/assets/img/icon/cursor.svg')}}" alt="">Visit Us Today</a></div>
-                           <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+            </div>
+         </div>
+         <div class="sticky-wrapper">
+            <div class="container">
+               <div class="menu-area">
+                  <div class="row align-items-center justify-content-between">
+                     <div class="col-auto">
+                        <div class="header-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center "></a></div>
+                     </div>
+                     <div class="col-auto">
+                        <nav class="main-menu style2 d-none d-lg-inline-block">
+                              @include('front.partials.menu')
+                        </nav>
+                        <div class="header-button"><button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button></div>
+                     </div>
+                     <div class="col-auto d-none d-xl-block">
+                        <div class="header-button"><a href="{{route('contact')}}" class="th-btn style2">Make Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
+
                         </div>
                      </div>
                   </div>
@@ -202,10 +178,8 @@
             </div>
          </div>
       </header>
-
-      @yield('content')
-
-      <footer class="footer-wrapper bg-title footer-layout1" data-bg-src="{{asset('assets/img/bg/footer_bg_1.png')}}">
+     @yield('content')
+     <footer class="footer-wrapper bg-title footer-layout1" data-bg-src="{{asset('assets/img/bg/footer_bg_1.png')}}">
          <div class="widget-area">
             <div class="container">
                <div class="row justify-content-between">
@@ -330,23 +304,23 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
          </svg>
       </div>
-      <script src="/theme/assets/js/vendor/jquery-3.7.1.min.js"></script>
-      <script src="/theme/assets/js/swiper-bundle.min.js"></script>
-      <script src="/theme/assets/js/bootstrap.min.js"></script>
-      <script src="/theme/assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="/theme/assets/js/jquery.counterup.min.js"></script>
-      <script src="/theme/assets/js/circle-progress.js"></script>
-      <script src="/theme/assets/js/jquery-ui.min.js"></script>
-      <script src="/theme/assets/js/imagesloaded.pkgd.min.js"></script>
-      <script src="/theme/assets/js/isotope.pkgd.min.js"></script>
-      <script src="/theme/assets/js/nice-select.min.js"></script>
-      <script src="/theme/assets/js/wow.min.js"></script>
-      <script src="/theme/assets/js/threesixty.min.js"></script>
-      <script src="/theme/assets/js/panolens.min.js"></script>
-      <script src="/theme/assets/js/gsap.min.js"></script>
-      <script src="/theme/assets/js/ScrollTrigger.min.js"></script>
-      <script src="/theme/assets/js/SplitText.js"></script>
-      <script src="/theme/assets/js/main.js"></script>
+      <script src="{{asset('theme/assets/js/vendor/jquery-3.7.1.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/swiper-bundle.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/bootstrap.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery.magnific-popup.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery.counterup.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/circle-progress.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery-ui.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/imagesloaded.pkgd.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/isotope.pkgd.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/nice-select.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/wow.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/threesixty.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/panolens.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/gsap.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/ScrollTrigger.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/SplitText.js')}}"></script>
+      <script src="{{asset('theme/assets/js/main.js')}}"></script>
    </body>
 
 </html>

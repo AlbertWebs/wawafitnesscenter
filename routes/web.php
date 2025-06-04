@@ -5,19 +5,39 @@ use App\Http\Controllers\MassageChairController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SiteSettingController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
-Route::get('/massage-chairs', [MassageChairController::class, 'index'])->name('massage-chairs.index');
-Route::get('/massage-chairs/{massage_chair:slug}', [MassageChairController::class, 'show'])->name('massage-chairs.show');
-Route::get('/categories/{category:slug}', [CategoryController::class, 'show'])->name('categories.show');
-Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+Route::get('/about-us', [HomeController::class, 'about'])->name('about-us');
 Route::post('/contact-us', [HomeController::class, 'sendContact'])->name('contact.send');
+Route::get('/health-benefits', [HomeController::class, 'healthBenefits'])->name('health-benefits');
+Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/terms-and-conditions', [HomeController::class, 'termsAndConditions'])->name('terms-and-conditions');
+Route::get('/copyright', [HomeController::class, 'copyright'])->name('copyright');
+Route::get('/return-policy', [HomeController::class, 'returnPolicy'])->name('return-policy');
+Route::get('/cookie-policy', [HomeController::class, 'cookiePolicy'])->name('cookie-policy');
+Route::get('/massage-services', [HomeController::class, 'massageServices'])->name('massage-services');
+Route::get('/massage-chairs-hire', [HomeController::class, 'massageChairsHire'])->name('massage-chairs-hire');
+Route::get('/massage-chairs-sale', [HomeController::class, 'massageChairsSale'])->name('massage-chairs-sale');
+Route::get('/massage-chairs/{slug}', [HomeController::class, 'massageChairs'])->name('massage-chairs-categories');
+// Frontend blog listing and details
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
+
+
+
+
 
 
 Route::middleware(['web'])->group(function () {
     Route::resource('admin/massage-chairs', MassageChairController::class);
     Route::resource('admin/categories', CategoryController::class);
+    Route::resource('admin/services', ServiceController::class);
+    Route::resource('admin/blogs', BlogController::class); // Add backend resource route for blogs
+    //admin.blogs.index
+    Route::get('admin/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
     Route::get('admin/site-settings', [SiteSettingController::class, 'edit'])->name('site-settings.edit');
     Route::post('admin/site-settings', [SiteSettingController::class, 'update'])->name('site-settings.update');
 });
