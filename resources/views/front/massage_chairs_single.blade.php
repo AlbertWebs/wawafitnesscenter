@@ -99,7 +99,7 @@
                               <?php
                                         $img = \App\Models\MassageChairImage::where('massage_chair_id', $rel->id)->first();
                                     ?>
-                                    <img style="width:100%; height:330px; object-fit:contain;" src="{{ asset('storage/' . $img->image_path) }}" alt="Product Image">
+                                    <img style="width:100%; height:430px; object-fit: cover ;" src="{{ asset('storage/' . $img->image_path) }}" alt="Product Image">
                               {{-- <div class="actions"><a href="#QuickView" class="icon-btn popup-content"><i class="far fa-eye"></i></a> <a href="cart.html" class="icon-btn"><i class="far fa-cart-plus"></i></a> <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i></a></div> --}}
                            </div>
                            <div class="product-content">
