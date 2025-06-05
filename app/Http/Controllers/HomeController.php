@@ -28,4 +28,10 @@ class HomeController extends Controller
         $chairs = MassageChair::where('category_id', $Category->id)->get(); 
         return view('front.massage_chairs', compact('settings', 'chairs','Category'));
     }
+
+    public function massageChairsSingle($category,$slug){
+         $Chair = MassageChair::where('slug', $slug)->first();
+
+         return view('front.massage_chairs_single', compact('Chair'));
+    }
 }

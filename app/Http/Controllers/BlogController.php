@@ -27,11 +27,11 @@ class BlogController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:blogs,slug',
             'description' => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $data = $request->only(['title', 'slug', 'description']);
+        $data = $request->only(['title', 'description']);
+        $data['slug'] = \Str::slug($request->title);
         if ($request->hasFile('image')) {
             $data['image'] = $request->file('image')->store('blogs', 'public');
         }
@@ -52,11 +52,11 @@ class BlogController extends Controller
         $blog = Blog::findOrFail($id);
         $request->validate([
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:blogs,slug,' . $blog->id,
             'description' => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $data = $request->only(['title', 'slug', 'description']);
+        $data = $request->only(['title', 'description']);
+        $data['slug'] = \Str::slug($request->title);
         if ($request->hasFile('image')) {
             $data['image'] = $request->file('image')->store('blogs', 'public');
         }

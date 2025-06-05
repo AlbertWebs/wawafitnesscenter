@@ -24,25 +24,25 @@ class MassageChairController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:massage_chairs,slug',
             'description' => 'required',
             'hiring_price' => 'required|numeric',
             'selling_price' => 'required|numeric',
             'category_id' => 'required|exists:categories,id',
-            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'images' => 'required|array|min:4',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $chair = MassageChair::create($request->only(['name', 'slug', 'description', 'hiring_price', 'selling_price', 'category_id']));
-        if ($request->hasFile('images')) {
-            foreach ($request->file('images') as $image) {
-                $path = $image->store('massage_chairs', 'public');
-                MassageChairImage::create([
-                    'massage_chair_id' => $chair->id,
-                    'image_path' => $path,
-                ]);
-            }
+        $data = $request->only(['name', 'description', 'hiring_price', 'selling_price', 'category_id']);
+        $data['slug'] = Str::slug($request->name);
+      
+        $chair = MassageChair::create($data);
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('massage_chairs', 'public');
+            MassageChairImage::create([
+                'massage_chair_id' => $chair->id,
+                'image_path' => $path,
+            ]);
         }
         return redirect()->route('massage-chairs.index')->with('success', 'Massage chair created successfully.');
     }
@@ -58,14 +58,15 @@ class MassageChairController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'required|string|max:255|unique:massage_chairs,slug,' . $massage_chair->id,
             'description' => 'required',
             'hiring_price' => 'required|numeric',
             'selling_price' => 'required|numeric',
             'category_id' => 'required|exists:categories,id',
             'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $massage_chair->update($request->only(['name', 'slug', 'description', 'hiring_price', 'selling_price', 'category_id']));
+        $data = $request->only(['name', 'description', 'hiring_price', 'selling_price', 'category_id']);
+        $data['slug'] = Str::slug($request->name);
+        $massage_chair->update($data);
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $path = $image->store('massage_chairs', 'public');

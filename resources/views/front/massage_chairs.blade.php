@@ -68,22 +68,26 @@
                 </div>
                <div class="col-xxl-9 col-lg-9">
                     <div class="row">
+                        @foreach($chairs as $chair)
                         <div class="col-xl-4 col-md-6">
                             <div class="th-product product-grid">
                                 <div class="product-img">
-                                    <img src="{{asset('theme/assets/img/product/product_1_1.jpg')}}" alt="Product Image">
+                                    <?php
+                                        $img = \App\Models\MassageChairImage::where('massage_chair_id', $chair->id)->first();
+                                    ?>
+                                    <img style="width:100%; height:390px; object-fit:cover;" src="{{ asset('storage/' . $img->image_path) }}" alt="Product Image">
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="product-title text-center"><a href="#">Puregen Labs Meclizine</a></h3>
+                                    <h3 class="product-title text-center" style="min-height:90px;"><a href="#">{{$chair->name}}</a></h3>
                                     
                                     <div class="btn-group justify-content-center">
-                                   
-                                    <a href="shop-details.html" class="th-btn btn-text">Request Quotation <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
+
+                                    <a href="{{route('massage-chairs-single', ['category' => $chair->category->slug, 'slug' => $chair->slug])}}" class="th-btn btn-text">Request Quotation <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        @endforeach
                     </div>
                </div>
             </div>

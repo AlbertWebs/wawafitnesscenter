@@ -22,6 +22,7 @@ Route::get('/massage-services', [HomeController::class, 'massageServices'])->nam
 Route::get('/massage-chairs-hire', [HomeController::class, 'massageChairsHire'])->name('massage-chairs-hire');
 Route::get('/massage-chairs-sale', [HomeController::class, 'massageChairsSale'])->name('massage-chairs-sale');
 Route::get('/massage-chairs/{slug}', [HomeController::class, 'massageChairs'])->name('massage-chairs-categories');
+Route::get('/massage-chairs/{category}/{slug}', [HomeController::class, 'massageChairsSingle'])->name('massage-chairs-single');
 // Frontend blog listing and details
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
