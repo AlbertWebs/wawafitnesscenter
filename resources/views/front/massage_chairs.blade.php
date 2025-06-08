@@ -69,7 +69,7 @@
                <div class="col-xxl-9 col-lg-9">
                     <div class="row">
                         @foreach($chairs as $chair)
-                        <div class="col-xl-4 col-md-6">
+                        <div class="col-xl-4 col-md-6" style="margin-bottom:30px">
                             <div class="th-product product-grid">
                                 <div class="product-img">
                                     <?php
