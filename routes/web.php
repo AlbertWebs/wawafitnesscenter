@@ -10,6 +10,9 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
+Route::get('/massage-chairs-for-hire', [HomeController::class, 'massageChairsForHire'])->name('massage-chairs-for-hire');
+
+Route::get('/news-updates', [HomeController::class, 'news'])->name('news');
 Route::get('/about-us', [HomeController::class, 'about'])->name('about-us');
 Route::post('/contact-us', [HomeController::class, 'sendContact'])->name('contact.send');
 Route::get('/health-benefits', [HomeController::class, 'healthBenefits'])->name('health-benefits');
@@ -25,7 +28,7 @@ Route::get('/massage-chairs/{slug}', [HomeController::class, 'massageChairs'])->
 Route::get('/massage-chairs/{category}/{slug}', [HomeController::class, 'massageChairsSingle'])->name('massage-chairs-single');
 // Frontend blog listing and details
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
-Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
+Route::get('/news-updates/{slug}', [HomeController::class, 'show'])->name('blogs.shows');
 
 
 

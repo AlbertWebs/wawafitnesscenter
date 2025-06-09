@@ -1,4 +1,4 @@
-@extends('front.master-page')
+@extends('front.master-category')
 
 @section('content')
     <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
@@ -19,7 +19,7 @@
                   <div class="title-area">
                     <h2 class="sec-title text-anime-style-3">Proudly Brought to you by <span class="fw-normal">Wawa Fitness Center</span></h2>
                      <p class="fs-18 wow fadeInUp" style="font-size: 22px !important; font-weight: 500; color: #000; line-height: 1.3;">
-                        {{$Category->description}}
+                         {!!html_entity_decode($Category->description)!!}
                      </p>
                     </div>
                </div>
@@ -78,7 +78,7 @@
                                     <img style="width:100%; height:390px; object-fit:cover;" src="{{ asset('storage/' . $img->image_path) }}" alt="Product Image">
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="product-title text-center" style="min-height:90px;"><a href="#">{{$chair->name}}</a></h3>
+                                    <h3 class="product-title text-center" style="min-height:90px;"><a href="{{route('massage-chairs-single', ['category' => $chair->category->slug, 'slug' => $chair->slug])}}">{{$chair->name}}</a></h3>
                                     
                                     <div class="btn-group justify-content-center">
 
@@ -89,6 +89,9 @@
                         </div>
                         @endforeach
                     </div>
+                    {{--  --}}
+                    {{$chairs}}
+                    {{--  --}}
                </div>
             </div>
             

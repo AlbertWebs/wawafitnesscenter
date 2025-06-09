@@ -38,7 +38,13 @@ class BlogController extends Controller
         Blog::create($data);
         return redirect()->route('admin.blogs.index')->with('success', 'Blog created successfully.');
     }
-
+    
+       // ADMIN: Show edit form
+    public function show($id)
+    {
+        $Blog = Blog::findOrFail($id);
+        return view('front.blog', compact('Blog'));
+    }
     // ADMIN: Show edit form
     public function edit($id)
     {

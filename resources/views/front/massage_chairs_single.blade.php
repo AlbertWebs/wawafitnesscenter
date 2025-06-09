@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.master-product')
 
 @section('content')
     <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">

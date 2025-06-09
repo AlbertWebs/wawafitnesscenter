@@ -14,8 +14,8 @@
                               <div class="hero-style1">
                                  <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">Relax, <span class="text-themes">Recharge</span>, Rejuvenate, After a Long Day</h1>
                                  <div class="btn-group justify-content-xl-start justify-content-center" data-ani="slideinup" data-ani-delay="0.8s">
-                                    <a href="contact.html" class="th-btn style1">Book an Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
-                                    <a href="service.html" class="th-btn th-border">Shop Masserge Chairs <i class="fa-light fa-arrow-right-long ms-2"></i></a>
+                                    <a href="{{route('contact')}}" class="th-btn style1">Book an Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
+                                    <a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn th-border">Shop Massage Chairs <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                                 </div>
                               </div>
                            </div>
@@ -41,21 +41,21 @@
                   <div class="feature-card th-ani">
                      <h3 class="box-title text-anime-style-2">Need a Quick Reboot?</h3>
                      <p class="box-text"><strong>Recharge your body with our express massage sessions.</strong> Whether you're on a tight schedule, our 20-minute chair massages are the perfect way to reduce tension and boost energy.</p>
-                     <a href="contact.html" class="th-btn black-border">Book a session today <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                     <a href="{{route('contact')}}" class="th-btn black-border">Book a session today <i class="fa-regular fa-arrow-right ms-2"></i></a>
                   </div>
                </div>
                <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInUp" data-wow-delay=".4s">
                   <div class="feature-card th-ani">
                      <h3 class="box-title text-anime-style-2">Clean. Safe. Professional.</h3>
                      <p class="box-text"><strong>Your wellness is our priority.</strong> We uphold the highest standards of hygiene, safety, and professionalism—from sterilized equipment to well-trained therapists. You’re in good hands.</p>
-                     <a href="contact.html" class="th-btn black-border">More About Us <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                     <a href="#about-sec" class="th-btn black-border">More About Us <i class="fa-regular fa-arrow-right ms-2"></i></a>
                   </div>
                </div>
                <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInRight" data-wow-delay=".6s">
                   <div class="feature-card th-ani">
                      <h3 class="box-title text-anime-style-2">Begin Your Wellness Transformation</h3>
                      <p class="box-text"><strong>From stress relief to full-body rejuvenation, we’ve got you covered.</strong> Explore our range of massage chairs and wellness packages tailored to your needs.</p>
-                     <a href="contact.html" class="th-btn black-border">Make Appointment <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                     <a href="{{route('contact')}}" class="th-btn black-border">Make Appointment <i class="fa-regular fa-arrow-right ms-2"></i></a>
                   </div>
                </div>
             </div>
@@ -93,7 +93,7 @@
                                  <div class="call-icon"><a href="tel:+00123456789"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 772 188 540">+254 772 188 540</a></p>
+                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
                                  </div>
                               </div>
                            </div>
@@ -265,10 +265,10 @@
                            <div class="btn-group col-12">
                               <button class="th-btn style2 style-radius">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></button>
                               <div class="call-info">
-                                 <div class="call-icon"><a href="tel:+254 772 188 540"><i class="fa-solid fa-phone"></i></a></div>
+                                 <div class="call-icon"><a href="tel:+254 708 666 527"><i class="fa-solid fa-phone"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 772 188 540">+254 772 188 540</a></p>
+                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
                                  </div>
                               </div>
                            </div>
@@ -355,7 +355,7 @@
                   <div class="testi-counter wow fadeInRight" data-wow-delay=".4s" data-bg-src="assets/img/shape/pattern.png">
                      <span class="subtitle">FACTS & NUMBERS</span>
                      <h2 class="box-counter"><span class="counter-number">98</span>%</h2>
-                     <p class="box-text">Of Clientss Recommeded WFC Services</p>
+                     <p class="box-text">Of Clients Recommed us</p>
                      <div class="btn-group mt-40"><a href="about.html" class="th-btn style1">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
                   </div>
                </div>
@@ -552,11 +552,13 @@
                     @foreach($Blogs as $blog)
                      <div class="swiper-slide">
                         <div class="blog-card wow fadeInUp">
-                           <div class="box-img global-img"><img style="height:300px; width:100%; object-fit:cover;" src="{{url('/')}}/uploads/{{ $blog->image }}" alt="blog image"></div>
+                           <div class="box-img global-img">
+                              <img style="height:300px; width:100%; object-fit:cover;" src="{{url('/')}}/uploads/{{ $blog->image }}" alt="blog image">
+                           </div>
                            <div class="box-content">
-                              <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i>Erp Team {{ $blog->created_at->format('Y') }}</a> <a href="blog.html"><i class="fa-solid fa-messages"></i>No Comment</a></div>
-                              <h3 class="box-title"><a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->title }}</a></h3>
-                              <a href="{{ route('blogs.show', $blog->slug) }}" class="line-btn">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                              <div class="blog-meta"><a href="{{ route('blogs.shows', $blog->slug) }}"><i class="fa-solid fa-user"></i>Erp Team {{ $blog->created_at->format('Y') }}</a> <a href="{{ route('blogs.shows', $blog->slug) }}"><i class="fa-solid fa-messages"></i>No Comment</a></div>
+                              <h3 class="box-title"><a href="{{ route('blogs.shows', $blog->slug) }}">{{ $blog->title }}</a></h3>
+                              <a href="{{ route('blogs.shows', $blog->slug) }}" class="line-btn">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a>
                            </div>
                         </div>
                      </div>

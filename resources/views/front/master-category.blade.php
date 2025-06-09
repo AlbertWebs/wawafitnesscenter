@@ -2,81 +2,83 @@
 <html class="no-js" lang="zxx">
  
    <head>
-           <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="author" content="Designekta Studios">
-      <meta name="robots" content="INDEX,FOLLOW">
-      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Designekta Studios">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
-    <title>WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi | Full Body & Zero Gravity Massage Equipment</title>
-    <meta name="description" content="WAWA Fitness Center is Nairobi's trusted supplier of premium massage chairs and fitness equipment. We offer both wholesale and retail options with fast delivery across Kenya.">
-    <meta name="keywords" content="massage chairs Nairobi, zero gravity massage chairs, full body massage equipment, wholesale fitness chairs, retail massage chairs Kenya, WAWA Fitness Center">
-    <meta name="robots" content="index, follow">
-     <link rel="canonical" href="https://wawafitnesscenter.co.ke/">
+    @foreach($Cats as $cat)
+        <title>{{$cat->name}} in Nairobi - Massage Chairs For Hire - WAWA Fitness Center </title>
+        <meta name="description" content="{{$cat->meta}}">
+        <meta name="keywords" content="massage chairs Nairobi, zero gravity massage chairs, full body massage equipment, wholesale fitness chairs, retail massage chairs Kenya, WAWA Fitness Center">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{url('/')}}/massage-chairs/{{$cat->slug}}">
 
-       <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
-    <meta property="og:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at Lunar Amusement Park, Kiambu Rd. We serve both retail and wholesale customers.">
-    <meta property="og:image" content="https://wawafitnesscenter.co.ke/assets/images/logo.png">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{url('/')}}/massage-chairs/{{$cat->slug}}">
+        <meta property="og:title" content="{{$cat->name}} - Massage Chairs For Hire - WAWA Fitness Center">
+        <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate II. We serve both retail and wholesale customers.">
+        <meta property="og:image" content="{{url('/')}}/uploads/category/{{$cat->slung}}">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
-    <meta name="twitter:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta name="twitter:description" content="Visit WAWA Fitness Center for quality massage chairs and fitness products in Kenya. Wholesale & retail deals available.">
-    <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/assets/images/social-preview.jpg">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="{{url('/')}}/massage-chairs/{{$cat->slug}}">
+        <meta name="twitter:title" content="{{$cat->name}} - Massage Chairs For Hire - WAWA Fitness Center">
+        <meta name="twitter:description" content="Visit WAWA Fitness Center for quality massage chairs and fitness products in Kenya. Wholesale & retail deals available.">
+        <meta name="twitter:image" content="{{url('/')}}/assets/images/social-preview.jpg">
 
-    <!-- Business Contact Meta -->
-    <meta name="business:contact_data:street_address" content="Lunar Amusement Park, Kiambu Rd">
-    <meta name="business:contact_data:locality" content="Kiambu">
-    <meta name="business:contact_data:region" content="Nairobi">
-    <meta name="business:contact_data:country_name" content="Kenya">
-    <meta name="business:contact_data:phone_number" content="+254772188540">
+        <!-- Business Contact Meta -->
+        <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate II">
+        <meta name="business:contact_data:locality" content="Nairobi">
+        <meta name="business:contact_data:region" content="Nairobi">
+        <meta name="business:contact_data:country_name" content="Kenya">
+        <meta name="business:contact_data:phone_number" content="+254 708 666 527">
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Store",
-        "name": "WAWA Fitness Center",
-        "image": "https://wawafitnesscenter.co.ke/assets/images/logo.png",
-        "description": "WAWA Fitness Center is a Nairobi-based store specializing in wholesale and retail massage chairs and fitness equipment. Visit us at Lunar Amusement Park, Kiambu Road.",
-        "url": "https://wawafitnesscenter.co.ke",
-        "telephone": "+254772188540",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Lunar Amusement Park, Kiambu Rd",
-        "addressLocality": "Kiambu",
-        "addressRegion": "Nairobi",
-        "postalCode": "00100",
-        "addressCountry": "KE"
-        },
-        "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -1.2006,
-        "longitude": 36.8219
-        },
-        "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-        ],
-        "opens": "08:30",
-        "closes": "18:00"
-        }],
-        "sameAs": [
-        "https://www.facebook.com/WAWAFitnessCenter",
-        "https://www.instagram.com/WAWAFitnessCenter"
-        ]
-    }
-    </script>
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Store",
+            "name": "WAWA Fitness Center",
+            "image": "{{url('/')}}/uploads/logo.png", 
+            "description": "WAWA Fitness Center is a Nairobi-based store specializing in wholesale and retail massage chairs and fitness equipment. Visit us at Lunar Amusement Park, Kiambu Road.",
+            "url": "{{url('/')}}",
+            "telephone": "+254 708 666 527",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "JKIA terminal 1B International Departures, Gate II",
+            "addressLocality": "Kiambu",
+            "addressRegion": "Nairobi",
+            "postalCode": "00100",
+            "addressCountry": "KE"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -1.2006,
+            "longitude": 36.8219
+            },
+            "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "08:30",
+            "closes": "18:00"
+            }],
+            "sameAs": [
+            "https://www.facebook.com/WAWAFitnessCenter",
+            "https://www.instagram.com/WAWAFitnessCenter"
+            ]
+        }
+        </script>
+    @endforeach
     <!--Start of Tawk.to Script-->
       <script type="text/javascript">
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -115,7 +117,7 @@
       <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
    </head>
    <body>
-     
+    
        <div class="preloader">
          <button class="th-btn preloaderCls">Cancel Preloader</button>
          <div class="preloader-inner">

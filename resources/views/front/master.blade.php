@@ -78,6 +78,20 @@
     }
     </script>
 
+    <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/68469ec575ee061917b3299d/1it9todsv';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+   </script>
+   <!--End of Tawk.to Script-->
+
       <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('uploads/favicon.png') }}">
       <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('uploads/favicon.png') }}">
       <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('uploads/favicon.png') }}">
@@ -157,15 +171,15 @@
                                  <div class="header-info_icon"><i class="fa-solid fa-location-dot"></i></div>
                                  <div class="media-body">
                                     <span class="header-info_label">Address</span>
-                                    <p class="header-info_link">Lunar Amusement Park, Kiambu Rd, Kiambu</p>
+                                    <p class="header-info_link">JKIA terminal 1B International Departures, Gate II</p>
                                  </div>
                               </div>
                                  <div class="divided"></div>
                               <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-location-dot"></i></div>
+                                 <div class="header-info_icon"><i class="fa-solid fa fa-phone"></i></div>
                                  <div class="media-body">
-                                    <span class="header-info_label">Address</span>
-                                    <p class="header-info_link">Lunar Amusement Park, Kiambu Rd, Kiambu</p>
+                                    <span class="header-info_label">Call/Whatsapp</span>
+                                    <p class="header-info_link">+254 708 666 527</p>
                                  </div>
                               </div>
                              
@@ -225,8 +239,8 @@
                               <li><a href="{{url('/')}}">Home</a></li>
                               <li><a href="{{route('about-us')}}">About Us</a></li>
                               <li><a href="{{route('health-benefits')}}">Health Benefits</a></li>
-                              <li><a href="{{route('massage-services')}}">Massage Services</a></li>
-                              <li><a href="{{route('massage-chairs-hire')}}">Massage Chairs Hire</a></li>
+                              <li><a href="{{route('contact')}}">Massage Services</a></li>
+                              <li><a href="{{url('/')}}/massage-chairs/4d-massage-chair">Massage Chairs</a></li>
                           
                               
                            </ul>
@@ -284,9 +298,9 @@
                   <div class="col-xl-4">
                      <div class="footer-widget-about">
                         <div class="th-widget-about">
-                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 772 188 540">+254 772 188 540 </a></span></p>
+                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 708 666 527">+254 708 666 527 </a></span></p>
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:info@wawafitnesscenter.com">info@wawafitnesscenter.com</a></span></p>
-                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>Lunar Amusement Park, Kimabu Rd, Kiambu</p>
+                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate II</p>
                         </div>
                      </div>
                   </div>
@@ -299,7 +313,9 @@
                         </div>
                         <div class="col-lg-6">
                            <div class="footer-top-btn">
-                              <div class="btn-group justify-content-center justify-content-lg-end"><a href="{{ route('contact') }}" class="th-btn">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a> <a href="{{ route('contact') }}" class="th-btn style2">Our Products<i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
+                              <div class="btn-group justify-content-center justify-content-lg-end">
+                                 <a href="{{ route('contact') }}" class="th-btn">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a> 
+                                 <a href="{{ url('/') }}/massage-chairs/4d-massage-chair" class="th-btn style2">Our Products<i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>
