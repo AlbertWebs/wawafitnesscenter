@@ -23,19 +23,23 @@
                                         $img = \App\Models\MassageChairImage::where('massage_chair_id', $Chair->id)->get();
                                     ?>
                         <div class="swiper-wrapper">
-                            @foreach($img as $im)
-                           <div class="swiper-slide"><img style="max-height:600px; object-fit:contain" src="{{ asset('uploads/' . $im->image_path) }}" alt=""></div>
+                           @foreach($img as $im)
+                              <div class="swiper-slide">
+                                 <div class="image-container">
+                                    <img style="max-height:600px; object-fit:contain; border:2px solid #28a745" src="{{ asset('uploads/' . $im->image_path) }}" alt="">
+                                 </div>
+                              </div>
                            @endforeach
                         </div>
                      </div>
-                     <button data-slider-prev="#productSlide1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button> <button data-slider-next="#productSlide1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+                     {{-- <button data-slider-prev="#productSlide1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button> <button data-slider-next="#productSlide1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
                      <div class="swiper th-slider product-grid2-thumb" data-slider-options='{"effect":"slide","slidesPerView":"3","spaceBetween":32,"breakpoints":{"0":{"slidesPerView":3},"576":{"slidesPerView":"3"}}}' data-slider-tab="#productSlide1">
                         <div class="swiper-wrapper">
                             @foreach($img as $im)
                            <div class="swiper-slide"><img src="{{ asset('uploads/' . $im->image_path) }}" alt=""></div>
                            @endforeach
                         </div>
-                     </div>
+                     </div> --}}
                   </div>
                </div>
                <div class="col-lg-6 align-self-center">

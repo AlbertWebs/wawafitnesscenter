@@ -27070,6 +27070,30 @@ span.select2-selection.select2-selection--single:focus {
 	text-transform: capitalize;
 }
 
+.image-container {
+    overflow: hidden; /* To contain the zoomed image */
+    cursor: zoom-in; /* Indicate zoom on hover */
+    display: inline-block; /* Essential for transform-origin to work correctly on the container */
+    max-height: 700px;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom */
+    transform-origin: center center; /* Zoom from the center by default */
+    max-width: 100%; /* Ensure image fits container initially */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Adjust the zoom level as desired (e.g., 1.5 for 50% larger) */
+}
+
+/* Optional: Add a class to indicate active slide for clearer targeting if needed */
+.swiper-slide-active .image-container:hover img {
+    /* You might want a slightly different hover effect for the active slide, or none at all */
+}
+
 @media (max-width: 991px) {
 
 	.space,

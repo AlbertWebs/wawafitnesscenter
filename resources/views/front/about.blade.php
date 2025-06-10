@@ -33,7 +33,7 @@
                            </p>
                            <div class="checklist mb-50">
                               <ul>
-                                 <li class="wow fadeInUp" data-wow-delay=".1s">Affordable full-body massage in 10 to 60-minute sessions.</li>
+                                 <li class="wow fadeInUp" data-wow-delay=".1s">Affordable full-body massage in 10 to 30-minute sessions.</li>
                                  <li class="wow fadeInUp" data-wow-delay=".3s">Selling massage chairs and spa massage chairs.</li>
                                  <li class="wow fadeInUp" data-wow-delay=".3s">Hire massage chairs for corporate functions.</li>
                               </ul>

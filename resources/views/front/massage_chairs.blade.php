@@ -78,7 +78,8 @@
                                     <img style="width:100%; height:390px; object-fit:cover;" src="{{ asset('uploads/' . $img->image_path) }}" alt="Product Image">
                                 </div>
                                 <div class="product-content">
-                                    <h3 class="product-title text-center" style="min-height:90px;"><a href="https://wa.me/254708666527?text=Hello, I found {{$chair->name}}, from your website, I would like to know more about it">{{$chair->name}}</a></h3>
+                                    <?php $Category  = \App\Models\Category::where('id', $chair->category_id)->first(); ?>
+                                    <h3 class="product-title text-center" style="min-height:90px;"><a href="{{route('massage-chairs-single', ['category' => $Category->slug, 'slug' => $chair->slug])}}">{{$chair->name}}</a></h3>
                                     
                                     <div class="btn-group justify-content-center">
 

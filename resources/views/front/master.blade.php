@@ -152,70 +152,24 @@
       </div>
       <header class="th-header header-layout1 header-absolute">
          <div class="container">
-            <div class="menu-area">
-               <div class="menu-top">
-                  <div class="container">
-                     <div class="row align-items-center justify-content-center justify-content-sm-between">
-                        <div class="col-auto">
-                           <div class="header-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="WFC "></a></div>
-                        </div>
-                        <div class="col-auto d-none d-sm-block">
-                           <div class="header-info-wrap">
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-envelope"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Mail</span>
-                                    <p class="header-info_link"><a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a></p>
-                                 </div>
-                              </div>
-                              <div class="divided"></div>
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa-location-dot"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Address</span>
-                                    <p class="header-info_link">JKIA terminal 1B International Departures, Gate II</p>
-                                 </div>
-                              </div>
-                                 <div class="divided"></div>
-                              <div class="header-info">
-                                 <div class="header-info_icon"><i class="fa-solid fa fa-phone"></i></div>
-                                 <div class="media-body">
-                                    <span class="header-info_label">Call/Whatsapp</span>
-                                    <p class="header-info_link">+254 708 666 527</p>
-                                 </div>
-                              </div>
-                             
-                           </div>
-                        </div>
-                        <div class="col-auto">
-                           <div class="header-button">
-                              <form class="search-form"><input type="text" placeholder="Search..."> <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button></form>
-                             
-                           </div>
+           <div class="menu-area">
+                  <div class="row align-items-center justify-content-between">
+                     <div class="col-auto">
+                        <div class="header-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center "></a></div>
+                     </div>
+                     <div class="col-auto">
+                        <nav class="main-menu style2 d-none d-lg-inline-block">
+                              @include('front.partials.menu')
+                        </nav>
+                        <div class="header-button"><button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button></div>
+                     </div>
+                     <div class="col-auto d-none d-xl-block">
+                        <div class="header-button">
+                            <a href="{{route('contact')}}" class="th-btn style2">Make Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="sticky-wrapper">
-                  <div class="container">
-                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                           <div class="header-wrapp">
-                              <div class="header-logo style1"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="WFC "></a></div>
-                              <nav class="main-menu style2 d-none d-lg-inline-block">
-                                 @include('front.partials.menu')
-                              </nav>
-                              <a href="{{route('contact')}}" class="th-btn style2">Make Appointment</a>
-                           </div>
-                        </div>
-                        <div class="col-auto">
-                           <div class="header-button d-none d-lg-block"><a href="{{route('contact')}}" class="th-btn style2">Make Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> <a href="{{route('contact')}}" class="th-btn"><img style="width:20px" src="{{asset('theme/assets/img/icon/cursor.svg')}}" alt="">Visit Us Today</a></div>
-                           <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
          </div>
       </header>
 

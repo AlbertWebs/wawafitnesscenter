@@ -46,14 +46,14 @@
                <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInLeft" data-wow-delay=".2s">
                   <div class="feature-card th-ani">
                      <h3 class="box-title text-anime-style-2">Need a Quick Reboot?</h3>
-                     <p class="box-text"><strong>Recharge your body with our express massage sessions.</strong> Whether you're on a tight schedule, our 20-minute chair massages are the perfect way to reduce tension and boost energy.</p>
+                     <p class="box-text"><strong>Recharge your body with our express massage sessions.</strong> Whether you're on a tight schedule, our chair massages are the perfect way to reduce tension and boost energy.</p>
                      <a href="{{route('contact')}}" class="th-btn black-border">Book a session today <i class="fa-regular fa-arrow-right ms-2"></i></a>
                   </div>
                </div>
                <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInUp" data-wow-delay=".4s">
                   <div class="feature-card th-ani">
                      <h3 class="box-title text-anime-style-2">Clean. Safe. Professional.</h3>
-                     <p class="box-text"><strong>Your wellness is our priority.</strong> We uphold the highest standards of hygiene, safety, and professionalism—from sterilized equipment to well-trained therapists. You’re in good hands.</p>
+                     <p class="box-text"><strong>Your wellness is our priority.</strong> We uphold the highest standards of hygiene, safety, and professionalism. You’re in good hands.</p>
                      <a href="#about-sec" class="th-btn black-border">More About Us <i class="fa-regular fa-arrow-right ms-2"></i></a>
                   </div>
                </div>
@@ -74,7 +74,7 @@
                   <div class="title-area">
                      <span class="sub-title text-anime-style-2" style="color:#000000; font-weight:800">About us</span>
 
-                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal">Massage Seats</span>, Effortless Experience, Trusted Wellness</h2>
+                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal">Massage Chairs</span>, Effortless Experience, Trusted Wellness</h2>
                   </div>
                   <div class="img-box1">
                      <div class="about-wrapper">
@@ -88,7 +88,7 @@
                            </p>
                            <div class="checklist mb-50">
                               <ul>
-                                 <li class="wow fadeInUp" data-wow-delay=".1s">Affordable full-body massage in 10 to 60-minute sessions.</li>
+                                 <li class="wow fadeInUp" data-wow-delay=".1s">Affordable full-body massage in 10 to 30-minute sessions.</li>
                                  <li class="wow fadeInUp" data-wow-delay=".3s">Selling massage chairs and spa massage chairs.</li>
                                  <li class="wow fadeInUp" data-wow-delay=".3s">Hire massage chairs for corporate functions.</li>
                               </ul>
@@ -145,7 +145,7 @@
                         <div class="service-content">
                            <div class="box-wrapp">
                               <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
-                              <h3 class="box-title"><a href="service.html">Affordable full-body massage in 10 to 60-minute sessions.</a></h3>
+                              <h3 class="box-title"><a href="service.html">Affordable full-body massage in 10 to 30-minute sessions.</a></h3>
                               <p class="box-text">Enjoy affordable full-body massage sessions tailored to your schedule, with flexible durations ranging from 10 to 60 minutes for ultimate relaxation and value.</p>
                            </div>
                            <div class="box-right-wrapp">
@@ -196,7 +196,7 @@
                <div class="col-xxl-5">
                   <div class="title-area pe-xl-5 text-lg-start text-center">
                      <span class="sub-title sub-title2 text-anime-style-1" style="font-weight:700">Why Choose Us</span>
-                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal d-block">Exceptional Services</span> For Every Clients</h2>
+                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal d-block">Exceptional Services</span> For Every Client</h2>
                      <p class="fs-18 pe-xl-5 wow fadeInLeft">We have world class equipment. We are equipped with best massage seats & accessories. We ensure best quality.</p>
                   </div>
                   <div class="choose-item-wrap">
@@ -250,8 +250,8 @@
                   <div class="appointment-area-wrapper">
                      <form action="#" method="POST" class="appointment-form wow fadeInUp ajax-contact">
                         <div class="title-area mb-40">
-                           <span class="sub-title">Book an appointment</span>
-                           <h2 class="sec-title">Book an Appointment for <span class="fw-normal">Massage Session</span></h2>
+                           <span class="sub-title">Appointment</span>
+                           <h2 class="sec-title">Book an appointment  <span class="fw-normal">with us</span></h2>
                         </div>
                         <div class="row">
                            <div class="form-group col-md-6"><input type="text" class="form-control" name="name" id="name" placeholder="Clients name"> <i class="fal fa-user"></i></div>
@@ -291,84 +291,6 @@
       </section>
      
 
-      <section class="overflow-hidden space overflow-hidden" id="testi-sec">
-         <div class="container">
-            <div class="row gy-24 justify-content-center">
-               <div class="col-xl-6">
-                  <div class="title-area text-center">
-                     <span class="sub-title text-anime-style-2" style="font-weight:700">Testimonials</span>
-                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal">What Our Clients </span>Think About Our Awesome Services</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row gy-24 mb-24">
-               <div class="col-xl-8">
-                  <div class="slider-area wow fadeInLeft" data-wow-delay=".2s">
-                     <div class="swiper th-slider testiSlide1 has-shadow" id="testiSlide1" data-slider-options='{"effect":"slide","loop":true}'>
-                        <div class="swiper-wrapper">
-                           <div class="swiper-slide">
-                              <div class="testi-card" data-bg-src="/theme/assets/img/bg/pattern.png">
-                                 <div class="box-quote"><img src="assets/img/icon/quote.svg" alt=""></div>
-                                 <p class="box-text">The professionalism and efficiency of the clinic made my visit smooth and stress-free. I highly recommend Dr. Jakob Smith and WFC to anyone in need of top-quality medical care.</p>
-                                 <div class="box-wrapp">
-                                    <div class="box-profile">
-                                       {{-- <div class="box-author"><img src="assets/img/testimonial/testi_1_1.png" alt="Avater"></div> --}}
-                                       <div class="box-info">
-                                          <h3 class="box-title">Monika Zuli</h3>
-                                          <span class="box-desig">Heart Clients</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="testi-card" data-bg-src="/theme/assets/img/bg/pattern.png">
-                                 <div class="box-quote"><img src="assets/img/icon/quote.svg" alt=""></div>
-                                 <p class="box-text">I was impressed by the attentive staff and the state-of-the-art facilities at the clinic. Dr. Smith's expertise and compassion truly set WFC apart in the healthcare field.</p>
-                                 <div class="box-wrapp">
-                                    <div class="box-profile">
-                                       {{-- <div class="box-author"><img src="assets/img/testimonial/testi_1_2.png" alt="Avater"></div> --}}
-                                       <div class="box-info">
-                                          <h3 class="box-title">Sofia Kim</h3>
-                                          <span class="box-desig">Diet Clients</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="testi-card" data-bg-src="/theme/assets/img/bg/pattern.png">
-                                 <div class="box-quote"><img src="assets/img/icon/quote.svg" alt=""></div>
-                                 <p class="box-text">The level of care and personalized treatment I received exceeded my expectations. Dr. Smith's dedication and the friendly atmosphere made the difference. Dr. Smith's expertise</p>
-                                 <div class="box-wrapp">
-                                    <div class="box-profile">
-                                       {{-- <div class="box-author"><img src="assets/img/testimonial/testi_1_3.png" alt="Avater"></div> --}}
-                                       <div class="box-info">
-                                          <h3 class="box-title">Lucas Fletcher</h3>
-                                          <span class="box-desig">Diet Clients</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                          
-                        </div>
-                        <div class="icon-box"><button data-slider-prev="#testiSlide1" class="slider-arrow default slider-prev"><i class="far fa-arrow-left"></i></button> <button data-slider-next="#testiSlide1" class="slider-arrow default slider-next"><i class="far fa-arrow-right"></i></button></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4">
-                  <div class="testi-counter wow fadeInRight" data-wow-delay=".4s" data-bg-src="assets/img/shape/pattern.png">
-                     <span class="subtitle">FACTS & NUMBERS</span>
-                     <h2 class="box-counter"><span class="counter-number">98</span>%</h2>
-                     <p class="box-text">Of Clients Recommed us</p>
-                     <div class="btn-group mt-40"><a href="about.html" class="th-btn style1">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-left="0%"><img src="assets/img/shape/element-1.png" alt=""></div>
-      </section>
       <div class="marquee-area">
          <div class="marquee-content positive-relative overflow-hidden">
             <div class="marquee">
@@ -429,7 +351,7 @@
          </div>
       </section>
 
-      <div class="overflow-hidden space overflow-hidden">
+      <div class="overflow-hidden overflow-hidden">
          <div class="container">
             <div class="slider-area">
                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"476":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
@@ -469,74 +391,7 @@
             </div>
          </div>
       </div>
-      <div class="overflow-hidden overflow-hidden" id="faq-sec">
-         <div class="container">
-            <div class="faq-area">
-               <div class="row align-items-center">
-                  <div class="col-xl-5">
-                     <div class="opening-hour-content" data-bg-src="assets/img/bg/contact_bg_1.png">
-                        <div class="title-area text-center">
-                           <h2 class="sec-title text-white text-anime-style-3">Opening Hours</h2>
-                           <p class="text wow fadeInUp">Most medical centers offer charity programs, counseling, and financial assistance for those in need.</p>
-                        </div>
-                        <div class="times-content"><span class="day">Moday <span class="time">8:00AM - 5:30PM</span></span> <span class="day">Tuesday <span class="time">8:00AM - 5:30PM</span></span> <span class="day">Wednesday <span class="time">8:00AM - 5:30PM</span></span> <span class="day">Thursday <span class="time">8:00AM - 5:30PM</span></span> <span class="day">Friday <span class="time">8:00AM - 5:30PM</span></span> <span class="day">Saturday <span class="time">8:00AM - 5:30PM</span></span></div>
-                        <div class="btn-group mt-60"><a href="about.html" class="th-btn style1">Book an Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
-                     </div>
-                  </div>
-                  <div class="col-xl-7 mt-35 mt-xl-0">
-                     <div class="faq-content">
-                        <div class="title-area mb-40">
-                           <span class="sub-title text-anime-style-2">FAQ’S</span>
-                           <h2 class="sec-title text-anime-style-3">Frequently Ask <span class="fw-normal">Questions</span></h2>
-                        </div>
-                        <div class="accordion-area accordion" id="faqAccordion3">
-                           <div class="accordion-card wow fadeInUp" data-wow-delay=".1s">
-                              <div class="accordion-header" id="collapse-item-1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">1. What types of massage services do you offer?</button></div>
-                              <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion3">
-                                 <div class="accordion-body">
-                                    <p class="faq-text">We offer full-body massage sessions using advanced Human Touch massage chairs. Sessions are available in 10, 20, 30, and 60-minute durations to suit your schedule and needs.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-card active wow fadeInUp" data-wow-delay=".3s">
-                              <div class="accordion-header" id="collapse-item-2"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">2. Can I buy a massage chair from Wawa?</button></div>
-                              <div id="collapse-2" class="accordion-collapse collapse show" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion3">
-                                 <div class="accordion-body">
-                                    <p class="faq-text">Yes, Wawa offers a selection of massage chairs for purchase. Please visit our store or contact our sales team for more information on available models and pricing.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-card wow fadeInUp" data-wow-delay=".5s">
-                              <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. Do you rent out massage chairs for events?</button></div>
-                              <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion3">
-                                 <div class="accordion-body">
-                                    <p class="faq-text">Absolutely! We offer massage chair hire services for corporate events, exhibitions, wellness days, and private functions. It’s a great way to add a relaxing touch to any event.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-card wow fadeInUp" data-wow-delay=".7s">
-                              <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. Are your services affordable?</button></div>
-                              <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion3">
-                                 <div class="accordion-body">
-                                    <p class="faq-text">Yes, our massage sessions are competitively priced to offer exceptional value. We believe wellness should be accessible, which is why we provide flexible packages for every budget.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-card wow fadeInUp" data-wow-delay=".8s">
-                              <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. Do I need to book in advance?</button></div>
-                              <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion3">
-                                 <div class="accordion-body">
-                                    <p class="faq-text">While walk-ins are welcome, we recommend booking in advance to secure your preferred time slot—especially during peak hours or for group and event services.</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
   
       <section class="overflow-hidden space overflow-hidden" id="blog-sec">
          <div class="container">
