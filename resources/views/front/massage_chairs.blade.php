@@ -75,7 +75,7 @@
                                     <?php
                                         $img = \App\Models\MassageChairImage::where('massage_chair_id', $chair->id)->first();
                                     ?>
-                                    <img style="width:100%; height:390px; object-fit:cover;" src="{{ asset('storage/' . $img->image_path) }}" alt="Product Image">
+                                    <img style="width:100%; height:390px; object-fit:cover;" src="{{ asset('uploads/' . $img->image_path) }}" alt="Product Image">
                                 </div>
                                 <div class="product-content">
                                     <h3 class="product-title text-center" style="min-height:90px;"><a href="{{route('massage-chairs-single', ['category' => $chair->category->slug, 'slug' => $chair->slug])}}">{{$chair->name}}</a></h3>
