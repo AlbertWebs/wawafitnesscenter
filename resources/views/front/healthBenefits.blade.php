@@ -139,7 +139,7 @@
                                  <div class="call-icon"><a href="tel:+00123456789"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 772 188 540">+254 772 188 540</a></p>
+                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
                                  </div>
                               </div>
                            </div>

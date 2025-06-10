@@ -94,7 +94,7 @@
                               </ul>
                            </div>
                            <div class="btn-group mt-40 wow fadeInUp" data-wow-delay=".4s">
-                              <a href="about.html" class="th-btn style2">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a>
+                              <a href="{{route('about-us')}}" class="th-btn style2">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                               <div class="call-info">
                                  <div class="call-icon"><a href="tel:+00123456789"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
@@ -145,12 +145,12 @@
                         <div class="service-content">
                            <div class="box-wrapp">
                               <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
-                              <h3 class="box-title"><a href="service.html">Affordable full-body massage in 10 to 30-minute sessions.</a></h3>
+                              <h3 class="box-title"><a href="{{route('contact')}}">Affordable full-body massage in 10 to 30-minute sessions.</a></h3>
                               <p class="box-text">Enjoy affordable full-body massage sessions tailored to your schedule, with flexible durations ranging from 10 to 60 minutes for ultimate relaxation and value.</p>
                            </div>
                            <div class="box-right-wrapp">
                               <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
-                              <div class="service-btn"><a href="service.html" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                              <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>
@@ -160,12 +160,12 @@
                         <div class="service-content">
                            <div class="box-wrapp">
                               <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
-                              <h3 class="box-title"><a href="{{route('massage-chairs.index')}}">Selling massage chairs and spa massage chairs.</a></h3>
+                              <h3 class="box-title"><a href="{{url('/')}}/massage-chairs/4d-massage-chair">Selling massage chairs and spa massage chairs.</a></h3>
                               <p class="box-text">We offer a range of high-quality massage and spa chairs for sale, perfect for personal use or enhancing your wellness business.</p>
                            </div>
                            <div class="box-right-wrapp">
                               <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/sadgsdg.jpg')}}" alt=""></div>
-                              <div class="service-btn"><a href="{{route('massage-chairs.index')}}" class="th-btn black-border">Products <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                              <div class="service-btn"><a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn black-border">Products <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>
@@ -175,12 +175,12 @@
                         <div class="service-content">
                            <div class="box-wrapp">
                               <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
-                              <h3 class="box-title"><a href="service.html">Hire massage chairs for corporate functions.</a></h3>
+                              <h3 class="box-title"><a href="{{route('contact')}}">Hire massage chairs for corporate functions.</a></h3>
                               <p class="box-text">Enhance your events with our massage chair hire service—perfect for corporate functions, exhibitions, and wellness activations.</p>
                            </div>
                            <div class="box-right-wrapp">
                              <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
-                              <div class="service-btn"><a href="service.html" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                              <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>
