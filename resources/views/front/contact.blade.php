@@ -28,14 +28,16 @@
                         <div class="icon-btn"><i class="fa-light fa-phone"></i></div>
                         <div class="media-body">
                            <h5 class="box-title">Phone Number</h5>
-                           <p class="box-text"><a href="tel:+254 708 666 527">+254 708 666 527</a> <a href="tel:+00123888000222">+254 708 666 527</a></p>
+                           <p class="box-text">
+                              <a href="tel:+254 708 666 527">+254 708 666 527</a> 
+                              {{-- <a href="tel:+254 708 666 527">+254 708 666 527</a></p> --}}
                         </div>
                      </div>
                      <div class="contact-media">
                         <div class="icon-btn"><i class="fa-solid fa-envelope"></i></div>
                         <div class="media-body">
                            <h5 class="box-title">Email Address</h5>
-                           <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a> <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a>
+                           <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a> <a href="mailto:hire@wawafitnesscenter.co.ke">hire@wawafitnesscenter.co.ke</a>
                         </div>
                      </div>
                   </div>
