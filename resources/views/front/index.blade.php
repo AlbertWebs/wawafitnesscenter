@@ -1,6 +1,7 @@
 @extends('front.master')
 
 @section('content')
+<h1 class="breadcumb-title" style="display:none">Massage Chairs for Hire – Relaxation on Demand at Wawa Fitness Center</h1>
 {{-- <div class="th-hero-wrapper hero-3" id="hero" data-bg-src="assets/img/bg/hero_bg_1.jpg"> --}}
       <div class="th-hero-wrapper hero-1" id="hero">
          <div class="swiper th-slider" data-slider-options='{"effect":"fade"}'>
