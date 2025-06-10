@@ -41,7 +41,7 @@
                   </div>
                </div>
                <div class="col-xl-8">
-                  <form action="https://html.themeholy.com/medova/demo/mail.php" method="POST" class="contact-form ajax-contact">
+                  <form action="{{route('contact.send')}}" method="POST" class="contact-form ajax-contact">
                      @csrf
                      <h3 class="h4 mb-30 mt-n3">Do you have questions? Contact Us</h3>
                      <div class="row">

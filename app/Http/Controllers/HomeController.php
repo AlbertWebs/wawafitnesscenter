@@ -7,6 +7,7 @@ use App\Models\SiteSetting;
 use App\Models\MassageChair;
 use App\Models\Category;
 use App\Models\Blog;
+use Mail;
 
 class HomeController extends Controller
 {
@@ -49,6 +50,26 @@ class HomeController extends Controller
         $categories = Category::all();
         $Blog = Blog::all();
         return view('front.news', compact('settings', 'chairs', 'categories','Blog'));
+    }
+
+    public function sendContact(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'number' => 'required|string|max:20',
+            'email' => 'required|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string|max:1000',
+        ]);
+
+        // Example: Send email (optional, or you could store in DB)
+        Mail::raw("Message from: {$validated['name']}\nPhone: {$validated['number']}\n\n{$validated['message']}", function($mail) use ($validated) {
+            $mail->to('info@wawafitnesscenter.co.ke')
+                ->subject($validated['subject'])
+                ->from($validated['email'], $validated['name']);
+        });
+
+        return response()->json(['success' => true, 'message' => 'Message sent successfully.']);
     }
 
     public function show($id)
