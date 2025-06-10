@@ -2,38 +2,39 @@
 <html class="no-js" lang="zxx">
   
    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="author" content="Designekta Studios">
-      <meta name="robots" content="INDEX,FOLLOW">
-      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Designekta Studios">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
-    <title>WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi | Full Body & Zero Gravity Massage Equipment</title>
-    <meta name="description" content="WAWA Fitness Center is Nairobi's trusted supplier of premium massage chairs and fitness equipment. We offer both wholesale and retail options with fast delivery across Kenya.">
-    <meta name="keywords" content="massage chairs Nairobi, zero gravity massage chairs, full body massage equipment, wholesale fitness chairs, retail massage chairs Kenya, WAWA Fitness Center">
+    <title>Massage Chairs for Hire in Nairobi | Full Body & Zero Gravity Chairs - WAWA Fitness Center </title>
+    <meta name="description" content="Hire premium massage chairs in Nairobi from WAWA Fitness Center. Ideal for events, offices, and personal use. Affordable rates and fast delivery across Kenya.">
+    <meta name="keywords" content="massage chairs for hire Nairobi, rent massage chairs Kenya, zero gravity massage chairs for hire, full body massage chair rental, massage equipment hire Nairobi, WAWA Fitness Center">
     <meta name="robots" content="index, follow">
-     <link rel="canonical" href="https://wawafitnesscenter.co.ke/">
+    <link rel="canonical" href="{{url('/')}}/massage-chairs-for-hire"> 
 
-       <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
-    <meta property="og:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate II. We serve both retail and wholesale customers.">
-    <meta property="og:image" content="https://wawafitnesscenter.co.ke/assets/images/logo.png">
+    <meta property="og:url" content="{{url('/')}}/massage-chairs-for-hire">
+    <meta property="og:title" content="Massage Chairs for Hire in Nairobi - WAWA Fitness Center ">
+    <meta property="og:description" content="Rent top-quality massage chairs from WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate II. We offer flexible hire packages across Kenya.">
+    <meta property="og:image" content="{{url('/')}}/assets/images/logo.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
-    <meta name="twitter:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta name="twitter:description" content="Visit WAWA Fitness Center for quality massage chairs and fitness products in Kenya. Wholesale & retail deals available.">
-    <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/assets/images/social-preview.jpg">
+    <meta name="twitter:url" content="{{url('/')}}/massage-chairs-for-hire">
+    <meta name="twitter:title" content="Massage Chairs for Hire in Nairobi - WAWA Fitness Center ">
+    <meta name="twitter:description" content="Hire massage chairs for your event, office, or personal use in Nairobi. Quality, comfort, and fast delivery guaranteed.">
+    <meta name="twitter:image" content="{{url('/')}}/assets/images/social-preview.jpg">
+
 
     <!-- Business Contact Meta -->
-     <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate II">
-      <meta name="business:contact_data:locality" content="Nairobi">
-      <meta name="business:contact_data:region" content="Nairobi">
-      <meta name="business:contact_data:country_name" content="Kenya">
-      <meta name="business:contact_data:phone_number" content="+254 708 666 527">
+    <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate II">
+    <meta name="business:contact_data:locality" content="Nairobi">
+    <meta name="business:contact_data:region" content="Nairobi">
+    <meta name="business:contact_data:country_name" content="Kenya">
+    <meta name="business:contact_data:phone_number" content="+254 708 666 527">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -41,9 +42,9 @@
         "@context": "https://schema.org",
         "@type": "Store",
         "name": "WAWA Fitness Center",
-        "image": "https://wawafitnesscenter.co.ke/assets/images/logo.png",
+        "image": "{{url('/')}}/assets/images/logo.png",
         "description": "WAWA Fitness Center is a Nairobi-based store specializing in wholesale and retail massage chairs and fitness equipment. Visit us at Lunar Amusement Park, Kiambu Road.",
-        "url": "https://wawafitnesscenter.co.ke",
+        "url": "{{url('/')}}/massage-chairs-for-hire",
         "telephone": "+254 708 666 527",
         "address": {
         "@type": "PostalAddress",
@@ -76,6 +77,7 @@
         "https://www.instagram.com/WAWAFitnessCenter",
         "https://x.com/WAWAfcKENYA",
         "https://www.linkedin.com/company/massage-chairs-kenya/"
+        ""
         ]
     }
     </script>
@@ -333,9 +335,9 @@
                      <div class="col-lg-7 text-center text-lg-end">
                         <div class="social-links">
                             <span class="title">Social Media:</span>
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                             <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
-                             <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
+                              <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
                               <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
                               <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
                         </div>

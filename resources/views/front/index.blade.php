@@ -32,7 +32,13 @@
             </div>
          </div>
          <div class="scroll-down"><a href="#about-sec" class="hero-scroll-wrap"><span></span></a> <span class="title">Scroll</span></div>
-         <div class="social-links"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></div>
+         <div class="social-links">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
+            <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+         </div>
       </div>
       <div class="position-relative space">
          <div class="container">

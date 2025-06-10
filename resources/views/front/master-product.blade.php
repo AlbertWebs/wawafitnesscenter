@@ -74,7 +74,9 @@
             }],
             "sameAs": [
             "https://www.facebook.com/WAWAFitnessCenter",
-            "https://www.instagram.com/WAWAFitnessCenter"
+            "https://www.instagram.com/WAWAFitnessCenter",
+            "https://x.com/WAWAfcKENYA",
+            "https://www.linkedin.com/company/massage-chairs-kenya/"
             ]
         }
         </script>
@@ -225,8 +227,8 @@
                               $Categories = \App\Models\Category::all();   
                            ?>
                            <ul class="menu">
-                              @foreach($Categories as $cat)
-                              <li><a href="{{route('massage-chairs-categories', $Chair->slug)}}">{{$Chair->name}}</a></li>
+                              @foreach($Categories as $Zcat)
+                              <li><a href="{{route('massage-chairs-categories', $Zcat->slug)}}">{{$Zcat->name}}</a></li>
                               @endforeach
                            
                            </ul>
@@ -299,7 +301,14 @@
                         <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> {{date('Y')}} <a href="#">Wawa Fitness Center</a>. All Rights Reserved.</p>
                      </div>
                      <div class="col-lg-7 text-center text-lg-end">
-                        <div class="social-links"><span class="title">Social Media:</span> <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></div>
+                        <div class="social-links">
+                            <span class="title">Social Media:</span>
+                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
+                              <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
+                              <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                      </div>
                   </div>
                </div>

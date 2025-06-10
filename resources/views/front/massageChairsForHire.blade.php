@@ -1,4 +1,4 @@
-@extends('front.master-page')
+@extends('front.master-hire')
 
 @section('content')
       <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
