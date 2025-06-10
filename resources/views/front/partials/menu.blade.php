@@ -1,7 +1,5 @@
 <ul>
-                                    <li>
-                                       <a href="{{url('/')}}">Home</a>
-                                    </li>
+                                   
                                     <li><a href="{{route('about-us')}}">About Us</a></li>
                                     <li><a href="{{route('massage-chairs-for-hire')}}">Massage Chairs for Hire</a></li>
                                     <li class="menu-item-has-children">

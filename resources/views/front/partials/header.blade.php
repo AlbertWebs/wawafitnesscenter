@@ -25,7 +25,7 @@
                <div class="menu-area">
                   <div class="row align-items-center justify-content-between">
                      <div class="col-auto">
-                        <div class="header-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center "></a></div>
+                        <div class="header-logo"><a href="{{url('/')}}"><img style="max-width:300px" src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center "></a></div>
                      </div>
                      <div class="col-auto">
                         <nav class="main-menu style2 d-none d-lg-inline-block">
