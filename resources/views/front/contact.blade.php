@@ -1,12 +1,62 @@
 @extends('front.master-page')
 
 @section('content')
-      <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
+      <style>
+        /* Basic CSS for the image arrangement */
+        .image-gallery {
+            display: flex;
+            justify-content: space-around; /* Distributes items evenly with space around them */
+            align-items: center; /* Vertically aligns items in the center */
+            width: 100%; /* Take full width of its parent */
+            padding: 10px 0; /* Add some vertical padding */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+        }
+
+        .image-gallery img {
+            max-width: 12%; /* Adjust based on how many images and desired spacing */
+            height: auto; /* Maintain aspect ratio */
+            /* border: 1px solid #ccc;  */
+            margin: 5px; /* Optional: spacing between images */
+            /* box-shadow: 0 2px 4px rgba(0,0,0,0.1);  */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+         .image-gallery{
+            display:none;
+         }
+            .image-gallery img {
+                max-width: 20%; /* More images per row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-gallery img {
+                max-width: 30%; /* Fewer images per row on mobile phones */
+            }
+        }
+    </style>
+     <div class="container">
+         <div class="image-gallery">
+            <img src="{{url('/')}}/uploads/chairs/1.png" alt="Massage Chair 1">
+            <img src="{{url('/')}}/uploads/chairs/2.png" alt="Massage Chair 2">
+            <img src="{{url('/')}}/uploads/chairs/3.png" alt="Massage Chair 3">
+            <img src="{{url('/')}}/uploads/chairs/L50massage-chair.png" alt="Massage Chair 4">
+            <img src="{{url('/')}}/uploads/chairs/4.png" alt="Massage Chair 5">
+            <img src="{{url('/')}}/uploads/chairs/5.png" alt="Massage Chair 6">
+            <img src="{{url('/')}}/uploads/chairs/6.png" alt="Massage Chair 7">
+         </div>
+     </div>
+     <h1 class="breadcumb-title" style="display:none">Contact Wawa Fitness Center</h1>
+
+
+    <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}" style="padding:10px 0">
          <div class="container">
             <div class="breadcumb-content">
-               <h1 class="breadcumb-title">Contact Us</h1>
-               <ul class="breadcumb-menu">
+               <ul class="breadcumb-menu" style="margin:9px 0">
                   <li><a href="{{url('/')}}">Home</a></li>
+                  {{-- <li><a href="{{url('/')}}">Shop</a></li> --}}
                   <li>Contact Us</li>
                </ul>
             </div>
