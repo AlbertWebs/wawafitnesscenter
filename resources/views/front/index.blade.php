@@ -433,7 +433,7 @@
          <div class="container">
             <div class="slider-area">
                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"476":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper" style="visibility: hidden">
                      <div class="swiper-slide">
                         <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"></a></div>
                      </div>
