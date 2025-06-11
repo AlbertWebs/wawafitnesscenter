@@ -249,7 +249,8 @@
             <div class="row align-items-center">
                <div class="col-xl-7">
                   <div class="appointment-area-wrapper">
-                     <form action="#" method="POST" class="appointment-form wow fadeInUp ajax-contact">
+                     <form action="{{route('contact.send')}}" method="POST" class="appointment-form wow fadeInUp ajax-contact">
+                        @csrf
                         <div class="title-area mb-40">
                            <span class="sub-title">Appointment</span>
                            <h2 class="sec-title">Book an appointment  <span class="fw-normal">with us</span></h2>
@@ -257,14 +258,13 @@
                         <div class="row">
                            <div class="form-group col-md-6"><input type="text" class="form-control" name="name" id="name" placeholder="Clients name"> <i class="fal fa-user"></i></div>
                            <div class="form-group col-md-6"><input type="email" class="form-control" name="email" id="email" placeholder="Email address"> <i class="fal fa-envelope"></i></div>
-                          <div class="form-group col-md-12"><input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile number"> <i class="fal fa-phone"></i></div>
+                          <div class="form-group col-md-12"><input type="text" class="form-control" name="number" id="number" placeholder="Mobile number"> <i class="fal fa-phone"></i></div>
                            <div class="form-group col-12">
                               <select name="subject" id="subject3" class="form-select nice-select">
                                  <option value="" disabled="disabled" selected="selected" hidden>Select Service</option>
-                                 <option value="General Massage">General Massage</option>
-                                 <option value="Deep Tissue Massage">Deep Tissue Massage</option>
-                                 <option value="Aromatherapy Massage">Aromatherapy Massage</option>
-                                 <option value="Sports Massage">Sports Massage</option>
+                                 @foreach($categories as $cat)
+                                    <option value="{{$cat->name}}">{{$cat->name}}</option>
+                                 @endforeach
                               </select>
                            </div>
                            <div class="form-group col-12"><textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Appointment note"></textarea> <i class="fal fa-comment"></i></div>

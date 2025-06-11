@@ -251,35 +251,41 @@
         d = '[name="email"]',
         u = e(".form-messages");
     function p() {
-        var t = e(c).serialize();
-        (function () {
-            var t,
-                a = !0;
-            function n(n) {
-                n = n.split(",");
-                for (var s = 0; s < n.length; s++) (t = c + " " + n[s]), e(t).val() ? (e(t).removeClass("is-invalid"), (a = !0)) : (e(t).addClass("is-invalid"), (a = !1));
+    var t = e(c).serialize();
+    var sendButton = e(c).find(".th-btn");
+    sendButton.prop("disabled", true).text("Sending...");
+
+    (function () {
+        var t, a = !0;
+        function n(n) {
+            n = n.split(",");
+            for (var s = 0; s < n.length; s++) {
+                t = c + " " + n[s];
+                e(t).val() ? (e(t).removeClass("is-invalid"), a = !0) : (e(t).addClass("is-invalid"), a = !1);
             }
-            n('[name="name"],[name="email"],[name="subject"],[name="number"],[name="message"]'),
-                e(d).val() &&
-                e(d)
-                    .val()
-                    .match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
-                    ? (e(d).removeClass("is-invalid"), (a = !0))
-                    : (e(d).addClass("is-invalid"), (a = !1));
-            return a;
-        })() &&
-            jQuery
-                .ajax({ url: e(c).attr("action"), data: t, type: "POST" })
-                .done(function (t) {
-                    u.removeClass("error");
-                    u.addClass("success");
-                    u.text(t.message); // Access the correct key
-                    e(c + ' input:not([type="submit"]),' + c + " textarea").val("");
-                })
-                .fail(function (e) {
-                    u.removeClass("success"), u.addClass("error"), "" !== e.responseText ? u.html(e.responseText) : u.html("Oops! An error occured and your message could not be sent.");
-                });
+        }
+        n('[name="name"],[name="email"],[name="subject"],[name="number"],[name="message"]'),
+        e(d).val() &&
+        e(d).val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
+            ? (e(d).removeClass("is-invalid"), a = !0)
+            : (e(d).addClass("is-invalid"), a = !1);
+        return a;
+    })() &&
+        jQuery
+            .ajax({ url: e(c).attr("action"), data: t, type: "POST" })
+            .done(function (t) {
+                u.removeClass("error").addClass("success").text(t.message);
+                e(c + ' input:not([type="submit"]),' + c + " textarea").val("");
+            })
+            .fail(function (e) {
+                u.removeClass("success").addClass("error");
+                u.html(e.responseText !== "" ? e.responseText : "Oops! An error occured and your message could not be sent.");
+            })
+            .always(function () {
+                sendButton.prop("disabled", false).text("Send Message");
+            });
     }
+
     function h(t, a, n, s) {
         e(a).on("click", function (a) {
             a.preventDefault(), e(t).addClass(s);
