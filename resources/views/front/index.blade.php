@@ -13,7 +13,7 @@
                         <div class="row align-items-end">
                            <div class="col-xl-7">
                               <div class="hero-style1">
-                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">Relax, <span class="text-themes">Recharge</span>, Rejuvenate, After a Long Day</h1>
+                                 <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">Relax, <span class="text-themes">Relief</span>, Recover After a Long Day</h1>
                                  <div class="btn-group justify-content-xl-start justify-content-center" data-ani="slideinup" data-ani-delay="0.8s">
                                     <a href="{{route('contact')}}" class="th-btn style1">Book an Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
                                     <a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn th-border">Shop Massage Chairs <i class="fa-light fa-arrow-right-long ms-2"></i></a>
@@ -41,7 +41,7 @@
             <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
          </div>
       </div>
-      <div class="position-relative space">
+      {{-- <div class="position-relative space">
          <div class="container">
             <div class="row gy-4 justify-content-center">
                <div class="col-md-6 col-xl-4 feature-card_wrapp wow fadeInLeft" data-wow-delay=".2s">
@@ -67,8 +67,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="about-area overflow-hidden space-bottom" id="about-sec">
+      </div> --}}
+      <div class="about-area overflow-hidden space space-bottom" id="about-sec">
          <div class="container">
             <div class="row gy-4">
                <div class="col-xxl-8 mb-30 mb-xl-0">
@@ -147,11 +147,11 @@
                            <div class="box-wrapp">
                               <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
                               <h3 class="box-title"><a href="{{route('contact')}}">Affordable full-body massage in 10 to 30-minute sessions.</a></h3>
-                              <p class="box-text">Enjoy affordable full-body massage sessions tailored to your schedule, with flexible durations ranging from 10 to 60 minutes for ultimate relaxation and value.</p>
+                              <p class="box-text">Enjoy affordable full-body massage sessions tailored to your schedule, with flexible durations ranging from 10 to 30 minutes for ultimate relaxation and value.</p>
                            </div>
                            <div class="box-right-wrapp">
                               <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
-                              <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                              <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border"> Make Enquiry<i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>

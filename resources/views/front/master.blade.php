@@ -150,28 +150,7 @@
             </div>
          </div>
       </div>
-      <header class="th-header header-layout1 header-absolute">
-         <div class="container">
-           <div class="menu-area">
-                  <div class="row align-items-center justify-content-between">
-                     <div class="col-auto">
-                        <div class="header-logo"><a href="{{url('/')}}"><img style="max-width:300px" src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center "></a></div>
-                     </div>
-                     <div class="col-auto">
-                        <nav class="main-menu style2 d-none d-lg-inline-block">
-                              @include('front.partials.menu')
-                        </nav>
-                        <div class="header-button"><button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button></div>
-                     </div>
-                     <div class="col-auto d-none d-xl-block">
-                        <div class="header-button">
-                            <a href="{{route('contact')}}" class="th-btn style2">Make Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
-                        </div>
-                     </div>
-                  </div>
-               </div>
-         </div>
-      </header>
+      @include('front.partials.header')
 
       @yield('content')
 
@@ -270,7 +249,7 @@
                         <div class="col-lg-6">
                            <div class="footer-top-btn">
                               <div class="btn-group justify-content-center justify-content-lg-end">
-                                 <a href="{{ route('contact') }}" class="th-btn">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a> 
+                                 <a href="{{ route('contact') }}" class="th-btn">Contact Us<i class="fa-light fa-arrow-right-long ms-2"></i></a> 
                                  <a href="{{ url('/') }}/massage-chairs/4d-massage-chair" class="th-btn style2">Our Products<i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
                            </div>
                         </div>

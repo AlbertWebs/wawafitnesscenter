@@ -7351,7 +7351,7 @@ ol.widget_recent_comments,
 .main-menu ul li:has(.sub-menu)>a:after,
 .main-menu ul li:has(.mega-menu)>a:after,
 .main-menu ul li.menu-item-has-children>a:after {
-	content: "\2b";
+	content: "";
 	position: relative;
 	font-family: var(--icon-font);
 	margin-left: 4px;
@@ -7917,7 +7917,7 @@ ol.widget_recent_comments,
 }
 
 .header-layout1 .sticky-wrapper.sticky .main-menu>ul>li>a {
-	padding: 39px 0
+	/* padding: 39px 0 */
 }
 
 .header-layout1 .sticky-wrapper.sticky .header-logo.style1 {
@@ -25130,7 +25130,7 @@ span.select2-selection.select2-selection--single:focus {
 	top: 30%;
 	width: 403px;
 	height: 403px;
-	border-radius: 294px
+	/* border-radius: 294px */
 }
 
 @media (max-width: 767px) {
@@ -25153,7 +25153,7 @@ span.select2-selection.select2-selection--single:focus {
 	right: -45px;
 	width: 539px;
 	height: 539px;
-	border-radius: 294px
+	/* border-radius: 294px */
 }
 
 @media (max-width: 767px) {
@@ -25176,7 +25176,7 @@ span.select2-selection.select2-selection--single:focus {
 	bottom: 0;
 	width: 280px;
 	height: 280px;
-	border-radius: 294px
+	/* border-radius: 294px */
 }
 
 @media (max-width: 767px) {
@@ -27093,7 +27093,15 @@ span.select2-selection.select2-selection--single:focus {
 .swiper-slide-active .image-container:hover img {
     /* You might want a slightly different hover effect for the active slide, or none at all */
 }
+.header-logo-link img{
+	max-width:300px;
+}
 
+@media (max-width: 768px) {
+	.header-logo-link img{
+		max-width:170px;
+	}
+}
 @media (max-width: 991px) {
 
 	.space,

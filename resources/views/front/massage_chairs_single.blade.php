@@ -1,18 +1,23 @@
 @extends('front.master-product')
 
 @section('content')
-    <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
-        <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">{{$Chair->name}}</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="{{url('/')}}">Home</a></li>
-                <li><a href="{{url('/')}}">Shop</a></li>
-                <li>{{$Chair->name}}</li>
+ @include('front.partials.chairs')
+  
+
+   <h1 class="breadcumb-title" style="display:none">{{$Chair->name}}</h1>
+
+
+   <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}" style="padding:10px 0">
+      <div class="container">
+         <div class="breadcumb-content">
+            <ul class="breadcumb-menu" style="margin:9px 0">
+               <li><a href="{{url('/')}}">Home</a></li>
+               <li><a href="{{url('/')}}">Shop</a></li>
+               <li>{{$Chair->name}}</li>
             </ul>
-        </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
   <section class="product-details overflow-hidden space-top space-extra-bottom">
          <div class="container">
             <div class="row gx-60">
@@ -54,7 +59,7 @@
                      </code>
                   
                      <div class="actions">
-                       <a href="https://wa.me/254708666527?text=Hello, I found {{$Chair->name}}, from your website, I would like to know more about it" class="th-btn btn-text">Request Quotation <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
+                       <a href="https://wa.me/254708666527?text=Hello, I found {{$Chair->name}}, from your website, I would like to know more about it" class="th-btn btn-text"> Inquire Now  <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
                      </div>
                      
                   </div>
@@ -106,7 +111,7 @@
                                 
                                 <div class="btn-group justify-content-center">
                                 <?php $Category  = \App\Models\Category::where('id', $rel->category_id)->first(); ?>
-                                <a href="{{route('massage-chairs-single', ['category' => $Category->slug, 'slug' => $rel->slug])}}" class="th-btn btn-text">Request Quotation <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
+                                <a href="{{route('massage-chairs-single', ['category' => $Category->slug, 'slug' => $rel->slug])}}" class="th-btn btn-text"> Inquire Now <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
