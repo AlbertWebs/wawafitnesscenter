@@ -31,7 +31,7 @@
                            @foreach($img as $im)
                               <div class="swiper-slide">
                                  <div class="image-container">
-                                    <img style="max-height:600px; object-fit:contain; border:2px solid #28a745" src="{{ asset('uploads/' . $im->image_path) }}" alt="">
+                                    <img  src="{{ asset('uploads/' . $im->image_path) }}" alt="">
                                  </div>
                               </div>
                            @endforeach

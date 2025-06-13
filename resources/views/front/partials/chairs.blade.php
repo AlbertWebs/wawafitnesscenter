@@ -42,9 +42,9 @@
          <div class="image-gallery">
             <a href="{{url('/')}}/massage-chairs/3d-massage-chair/electric-full-body-airbag-massage-chair-ww-l21"><img src="{{url('/')}}/uploads/chairs/1.png" alt="Massage Chair 1"></a>
             <a href="{{url('/')}}/massage-chairs/3d-massage-chair/new-intelligent-full-body-airbag-massage-chair-l30a"><img src="{{url('/')}}/uploads/chairs/2.png" alt="Massage Chair 2"></a>
-            <a href="{{url('/')}}//massage-chairs/4d-massage-chair/new-design-4d-zero-gravity-massage-chair-l36"><img src="{{url('/')}}/uploads/chairs/3.png" alt="Massage Chair 3"></a>
-            <a href="{{url('/')}}//massage-chairs/4d-massage-chair/new-4d-ai-music-zero-gravity-massage-chair-l50"><img src="{{url('/')}}/uploads/chairs/L50massage-chair.png" alt="Massage Chair 4"></a>
-            <a href="{{url('/')}}//massage-chairs/4d-massage-chair/new-4d-ai-music-zero-gravity-massage-chair-l50"><img src="{{url('/')}}/uploads/chairs/4.png" alt="Massage Chair 5"></a>
+            <a href="{{url('/')}}/massage-chairs/4d-massage-chair/new-design-4d-zero-gravity-massage-chair-l36"><img src="{{url('/')}}/uploads/chairs/3.png" alt="Massage Chair 3"></a>
+            <a href="{{url('/')}}/massage-chairs/4d-massage-chair/new-4d-ai-music-zero-gravity-massage-chair-l50"><img src="{{url('/')}}/uploads/chairs/L50massage-chair.png" alt="Massage Chair 4"></a>
+            <a href="{{url('/')}}/massage-chairs/4d-massage-chair/new-4d-ai-music-zero-gravity-massage-chair-l50"><img src="{{url('/')}}/uploads/chairs/4.png" alt="Massage Chair 5"></a>
             <a href="{{url('/')}}/massage-chairs/3d-massage-chair/electric-full-body-3d-massage-chair-l26a-max"><img src="{{url('/')}}/uploads/chairs/5.png" alt="Massage Chair 6"></a>
             <a href="{{url('/')}}/massage-chairs/3d-massage-chair/high-performance-sl-track-massage-chair-x10"><img src="{{url('/')}}/uploads/chairs/6.png" alt="Massage Chair 7"></a>
          </div>
