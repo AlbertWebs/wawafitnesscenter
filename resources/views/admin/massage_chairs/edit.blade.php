@@ -40,11 +40,19 @@
             <input type="file" name="images[]" class="form-control" multiple>
             <div class="mt-2">
                 @foreach($massage_chair->images as $img)
-                    <img src="{{ asset('storage/' . $img->image_path) }}" width="50" height="50" style="object-fit:cover; margin-right:5px;" />
+                    <img src="{{ asset('uploads/' . $img->image_path) }}" width="50" height="50" style="object-fit:cover; margin-right:5px;" />
                 @endforeach
             </div>
         </div>
         <button type="submit" class="btn btn-success">Update</button>
         <a href="{{ route('massage-chairs.index') }}" class="btn btn-secondary">Back</a>
     </form>
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+    .create(document.querySelector('textarea[name="description"]'))
+    .catch(error => {
+      console.error(error);
+    });
+</script>
 @endsection

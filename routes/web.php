@@ -40,6 +40,8 @@ Route::middleware(['web'])->group(function () {
     Route::resource('admin/categories', CategoryController::class);
     Route::resource('admin/services', ServiceController::class);
     Route::resource('admin/blogs', BlogController::class); // Add backend resource route for blogs
+    
+    Route::get('admin/massage-chairs/add-image/{id}', [MassageChairController::class, 'addImages'])->name('massage-chairs.add.image');
     //admin.blogs.index
     Route::get('admin/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
     Route::get('admin/site-settings', [SiteSettingController::class, 'edit'])->name('site-settings.edit');

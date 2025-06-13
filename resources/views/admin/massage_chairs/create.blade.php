@@ -39,4 +39,13 @@
         <button type="submit" class="btn btn-success">Save</button>
         <a href="{{ route('massage-chairs.index') }}" class="btn btn-secondary">Back</a>
     </form>
+    <!-- Add this before closing </body> -->
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+    .create(document.querySelector('textarea[name="description"]'))
+    .catch(error => {
+      console.error(error);
+    });
+</script>
 @endsection

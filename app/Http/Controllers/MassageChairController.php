@@ -54,6 +54,14 @@ class MassageChairController extends Controller
         return view('admin.massage_chairs.edit', compact('massage_chair', 'categories'));
     }
 
+    public function addImages($massage_chair)
+    {
+        $MassageChairImage = MassageChairImage::where('massage_chair_id', $massage_chair)->first();
+        return view('admin.massage_chairs.addImages', compact('MassageChairImage'));
+    }
+
+    
+
     public function update(Request $request, MassageChair $massage_chair)
     {
         $request->validate([
@@ -69,10 +77,20 @@ class MassageChairController extends Controller
         $massage_chair->update($data);
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $path = $image->store('massage_chairs', 'public');
+                $filename = time() . '_' . $image->getClientOriginalName(); // optionally make filename unique
+                $destinationPath = public_path('/uploads/massage_chairs');
+                
+                // Ensure the directory exists
+                if (!file_exists($destinationPath)) {
+                    mkdir($destinationPath, 0755, true);
+                }
+
+                $image->move($destinationPath, $filename);
+
+                // Save relative path for public access (if using it in frontend)
                 MassageChairImage::create([
                     'massage_chair_id' => $massage_chair->id,
-                    'image_path' => $path,
+                    'image_path' => 'massage_chairs/' . $filename,
                 ]);
             }
         }

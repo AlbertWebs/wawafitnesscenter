@@ -27071,10 +27071,11 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .image-container {
-    overflow: hidden; /* To contain the zoomed image */
-    cursor: zoom-in; /* Indicate zoom on hover */
+    overflow: hidden;
+    cursor: zoom-in; 
     display: inline-block; /* Essential for transform-origin to work correctly on the container */
     max-height: 700px;
+	width:100%;
 }
 
 .image-container img {
@@ -27082,7 +27083,8 @@ span.select2-selection.select2-selection--single:focus {
     transform-origin: center center; /* Zoom from the center by default */
     max-width: 100%; /* Ensure image fits container initially */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below image */
+    display: block; /* Remove extra space below image */	
+	object-fit: contain !important;
 }
 
 .image-container:hover img {
