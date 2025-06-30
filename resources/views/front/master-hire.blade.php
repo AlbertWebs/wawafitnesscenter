@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{url('/')}}/massage-chairs-for-hire">
     <meta property="og:title" content="Massage Chairs for Hire in Nairobi - WAWA Fitness Center ">
-    <meta property="og:description" content="Rent top-quality massage chairs from WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate II. We offer flexible hire packages across Kenya.">
+    <meta property="og:description" content="Rent top-quality massage chairs from WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate 11. We offer flexible hire packages across Kenya.">
     <meta property="og:image" content="{{url('/')}}/assets/images/logo.png">
 
     <!-- Twitter -->
@@ -30,7 +30,7 @@
 
 
     <!-- Business Contact Meta -->
-    <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate II">
+    <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate 11">
     <meta name="business:contact_data:locality" content="Nairobi">
     <meta name="business:contact_data:region" content="Nairobi">
     <meta name="business:contact_data:country_name" content="Kenya">
@@ -48,7 +48,7 @@
         "telephone": "+254 708 666 527",
         "address": {
         "@type": "PostalAddress",
-        "streetAddress": "JKIA terminal 1B International Departures, Gate II",
+        "streetAddress": "JKIA terminal 1B International Departures, Gate 11",
         "addressLocality": "Kiambu",
         "addressRegion": "Nairobi",
         "postalCode": "00100",
@@ -237,7 +237,7 @@
                         <div class="th-widget-about">
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 708 666 527">+254 708 666 527 </a></span></p>
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:info@wawafitnesscenter.com">info@wawafitnesscenter.com</a></span></p>
-                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate II</p>
+                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate 11</p>
                         </div>
                      </div>
                   </div>

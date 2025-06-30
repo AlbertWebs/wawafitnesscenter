@@ -198,7 +198,7 @@
                   <div class="title-area pe-xl-5 text-lg-start text-center">
                      <span class="sub-title sub-title2 text-anime-style-1" style="font-weight:700">Why Choose Us</span>
                      <h2 class="sec-title text-anime-style-3"><span class="fw-normal d-block">Exceptional Services</span> For Every Client</h2>
-                     <p class="fs-18 pe-xl-5 wow fadeInLeft">We have world class equipment. We are equipped with best massage seats & accessories. We ensure best quality.</p>
+                     <p class="fs-18 pe-xl-5 wow fadeInLeft">We have world class equipment. We are equipped with best massage Chairs & accessories. We ensure best quality.</p>
                   </div>
                   <div class="choose-item-wrap">
                      <div class="choose-item wow fadeInUp" data-wow-delay=".3s">

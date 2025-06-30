@@ -30,7 +30,7 @@
         <meta name="twitter:image" content="{{url('/')}}/assets/images/social-preview.jpg">
 
         <!-- Business Contact Meta -->
-        <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate II">
+        <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate 11">
         <meta name="business:contact_data:locality" content="Nairobi">
         <meta name="business:contact_data:region" content="Nairobi">
         <meta name="business:contact_data:country_name" content="Kenya">
@@ -48,7 +48,7 @@
             "telephone": "+254 708 666 527",
             "address": {
             "@type": "PostalAddress",
-            "streetAddress": "JKIA terminal 1B International Departures, Gate II",
+            "streetAddress": "JKIA terminal 1B International Departures, Gate 11",
             "addressLocality": "Kiambu",
             "addressRegion": "Nairobi",
             "postalCode": "00100",
@@ -228,7 +228,7 @@
                         <div class="th-widget-about">
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 708 666 527">+254 708 666 527 </a></span></p>
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a></span></p>
-                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate II</p>
+                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate 11</p>
                         </div>
                      </div>
                   </div>

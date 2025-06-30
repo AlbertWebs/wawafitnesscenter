@@ -25,33 +25,19 @@
                      <div class="about-wrapper">
                         <div class="img1"><img src="{{asset('uploads/homeL50.jpg')}}" alt="About"> <a href="https://www.youtube.com/watch?v=4nC9npHkqOg" class="play-btn popup-video"><i class="fa-solid fa-play"></i></a></div>
                         <div class="">
-
                            <p class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s">
-                              At <strong>Wawa Fitness Center,</strong> we believe in the power of wellness — anytime,
-                              anywhere. Since 2015, we’ve been dedicated to making relaxation more accessible
-                              through our premium massage chair services.<br><br>
+                            <strong>Our advanced massage chair is perfectly suited for both commercial and personal use.</strong>
+                            It can be conveniently installed in high-traffic areas such as shopping malls, barbershops, and beauty salons, or placed at home for individual relaxation—particularly beneficial for individuals experiencing back discomfort.<br><br>
 
-                              We offer high-quality, full-body massage chair experiences tailored for traveller’s,
-                              busy professionals, and everyday individuals seeking comfort and relief. Whether
-                              you&#39;re passing through an airport, taking a wellness break at work, or simply in need
-                              of a few minutes of calm, our chairs deliver a revitalizing experience in minutes.
-                              <br>
-                              Beyond on-site services, we also:
+                            Engineered for comfort and effectiveness, the chair delivers a comprehensive neck and back massage using a variety of techniques, including kneading, tapping, pressing, knocking, and Shiatsu.
                            </p>
-
                            <div class="checklist mb-50">
                               <ul>
-                                 <li class="wow fadeInUp" data-wow-delay=".1s">Hire out massage chairs for events, offices, and wellness programs</li>
-                                 <li class="wow fadeInUp" data-wow-delay=".3s">Partner with corporates to bring stress relief directly into their workplaces.</strong></li>
-                                 <li class="wow fadeInUp" data-wow-delay=".3s">Sell premium massage chairs for personal and business use.</li>
+                                 <li class="wow fadeInUp" data-wow-delay=".1s">Affordable full-body massage in 10 to 30-minute sessions.</li>
+                                 <li class="wow fadeInUp" data-wow-delay=".3s">Selling massage chairs and spa massage chairs.</li>
+                                 <li class="wow fadeInUp" data-wow-delay=".3s">Hire massage chairs for corporate functions.</li>
                               </ul>
                            </div>
-                           <p>
-                              From airports to boardrooms, homes to hospitality spaces, Wawa is helping people
-                              pause, breathe, and recharge — one massage at a time.
-                              <br>
-                              <strong>Relax. Relief. Recover — with Wawa Fitness Center.</strong>
-                           </p>
                            <div class="btn-group mt-40 wow fadeInUp" data-wow-delay=".4s">
                               <a href="about.html" class="th-btn style2">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                               <div class="call-info">
