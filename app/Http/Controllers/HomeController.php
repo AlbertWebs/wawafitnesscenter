@@ -85,6 +85,11 @@ class HomeController extends Controller
     public function termsAndConditions(){
         return view('front.terms');
     }
+     public function copyright(){
+        return view('front.copyright');
+    }
+
+    
     public function privacyPolicy(){
         return view('front.privacy');
     }

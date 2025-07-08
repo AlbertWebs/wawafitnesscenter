@@ -6,7 +6,7 @@
                      <div class="header-links">
                         <ul>
                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a></li>
-                           <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span>JKIA terminal 1B International Departures, Gate II</span></li>
+                           <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span>JKIA Terminal 1B International Departures, Gate 11</span></li>
                             <li class="d-none d-md-inline-block"><i class="fa-solid fa-phone"></i> <span>+254 708 666 527</span></li>
                         </ul>
                      </div>
@@ -14,11 +14,13 @@
                   <div class="col-auto">
                     <div class="social-links">
                             {{-- <span class="title">Social Media:</span> --}}
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                             <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
-                             <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
-                              <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
-                              <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+                           
+                            <a target="new" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                             <a target="new" href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
+                              <a target="new" href="https://www.youtube.com/@wawafitnesscenter5166"><i class="fab fa-youtube"></i></a>
+                             <a target="new" href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
+                              <a target="new" href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
+                              <a target="new" href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
                         </div>
                   </div>
                </div>

@@ -4,10 +4,10 @@
       <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
          <div class="container">
             <div class="breadcumb-content">
-               <h1 class="breadcumb-title">News Updates</h1>
+               <h1 class="breadcumb-title">Terms and Conditions</h1>
                <ul class="breadcumb-menu">
                   <li><a href="{{url('/')}}">Home</a></li>
-                  <li>News Updates</li>
+                  <li>Terms and Conditions</li>
                </ul>
             </div>
          </div>
@@ -23,7 +23,7 @@
 
    <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
     <h4>Acceptance of Terms</h4>
-     <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">By accessing or using our website ( <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">wawafitness.co.ke</div>), you agree to comply with these Terms and Conditions. If you do not agree, please do not use our site.</div>
+     <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">By accessing or using our website wawafitnesscenter.co.ke, you agree to comply with these Terms and Conditions. If you do not agree, please do not use our site.</div>
   </div>
 
    <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -91,7 +91,7 @@
    <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
     <h4>Contact Us</h4>
      <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-      📧 Email:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">info@wawafitness.co.ke</div><br>
+      📧 Email:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">info@wawafitnesscenter.co.ke</div><br>
       📞 Phone:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">0772 188540</div>
     </div>
   </div>

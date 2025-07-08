@@ -4,10 +4,10 @@
       <div class="breadcumb-wrapper" data-bg-src="{{asset('uploads/bg-qbout.jpg')}}">
          <div class="container">
             <div class="breadcumb-content">
-               <h1 class="breadcumb-title">News Updates</h1>
+               <h1 class="breadcumb-title">Privacy Policy</h1>
                <ul class="breadcumb-menu">
                   <li><a href="{{url('/')}}">Home</a></li>
-                  <li>News Updates</li>
+                  <li>Privacy Policy</li>
                </ul>
             </div>
          </div>
@@ -24,7 +24,7 @@
                     <div>
                         <h4>Introduction</h4>
                         <div>
-                        At <div>Wawa Fitness Center</div>, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website (<div>wawafitness.co.ke</div>).
+                        At <div>Wawa Fitness Center</div>, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website wawafitnesscenter.co.ke.
                         </div>
                     </div>
 
@@ -112,7 +112,7 @@
                         <h4>Contact Us</h4>
                         <div>
                         If you have any questions about this Privacy Policy, please contact us:<br>
-                        📧 Email: <div>info@wawafitness.co.ke</div><br>
+                        📧 Email: <div>info@wawafitnesscenter.co.ke</div><br>
                         📞 Phone: <div>0772 188540</div>
                         </div>
                     </div>

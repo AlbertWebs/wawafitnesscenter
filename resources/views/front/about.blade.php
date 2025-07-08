@@ -39,14 +39,12 @@
                               Beyond on-site services, we also:
                            </p>
 
-                           <div class="checklist mb-50">
-                              <ul>
-                                 <li class="wow fadeInUp" data-wow-delay=".1s">Hire out massage chairs for events, offices, and wellness programs</li>
-                                 <li class="wow fadeInUp" data-wow-delay=".3s">Partner with corporates to bring stress relief directly into their workplaces.</strong></li>
-                                 <li class="wow fadeInUp" data-wow-delay=".3s">Sell premium massage chairs for personal and business use.</li>
-                              </ul>
-                           </div>
-                           <p>
+                           <p class="fs-18 mb-30 wow fadeInUp">
+                                 1.Hire out massage chairs for events, offices, and wellness programs<br>
+                                 2.Partner with corporates to bring stress relief directly into their workplaces.<br>
+                                 3.Sell premium massage chairs for personal and business use.<br>
+                           </p>
+                           <p class="fs-18 mb-30 wow fadeInUp">
                               From airports to boardrooms, homes to hospitality spaces, Wawa is helping people
                               pause, breathe, and recharge — one massage at a time.
                               <br>

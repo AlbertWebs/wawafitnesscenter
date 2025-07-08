@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
     <meta property="og:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at JKIA terminal 1B International Departures, Gate 11. We serve both retail and wholesale customers.">
+    <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at JKIA Terminal 1B International Departures, Gate 11. We serve both retail and wholesale customers.">
     <meta property="og:image" content="https://wawafitnesscenter.co.ke/assets/images/logo.png">
 
     <!-- Twitter -->
@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/assets/images/social-preview.jpg">
 
     <!-- Business Contact Meta -->
-          <meta name="business:contact_data:street_address" content="JKIA terminal 1B International Departures, Gate 11">
+          <meta name="business:contact_data:street_address" content="JKIA Terminal 1B International Departures, Gate 11">
         <meta name="business:contact_data:locality" content="Nairobi">
         <meta name="business:contact_data:region" content="Nairobi">
         <meta name="business:contact_data:country_name" content="Kenya">
@@ -47,7 +47,7 @@
         "telephone": "+254 708 666 527",
         "address": {
         "@type": "PostalAddress",
-        "streetAddress": "JKIA terminal 1B International Departures, Gate 11",
+        "streetAddress": "JKIA Terminal 1B International Departures, Gate 11",
         "addressLocality": "Kiambu",
         "addressRegion": "Nairobi",
         "postalCode": "00100",
@@ -226,7 +226,7 @@
                         <div class="th-widget-about">
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 708 666 527">+254 708 666 527 </a></span></p>
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a></span></p>
-                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA terminal 1B International Departures, Gate 11</p>
+                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA Terminal 1B International Departures, Gate 11</p>
                         </div>
                      </div>
                   </div>
@@ -257,11 +257,12 @@
                      <div class="col-lg-7 text-center text-lg-end">
                         <div class="social-links">
                             <span class="title">Social Media:</span>
-                               <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                               <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
-                               <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
-                               <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
-                               <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+                              <a target="new" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                              <a target="new" href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
+                              <a target="new" href="https://www.youtube.com/@wawafitnesscenter5166"><i class="fab fa-youtube"></i></a>
+                              <a target="new" href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
+                              <a target="new" href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
+                              <a target="new" href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
                         </div>
                      </div>
                   </div>
