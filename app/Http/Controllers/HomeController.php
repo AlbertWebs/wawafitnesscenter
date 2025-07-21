@@ -23,6 +23,12 @@ class HomeController extends Controller
         $settings = SiteSetting::first();
         return view('front.about', compact('settings'));
     }
+      public function airport(){
+        $settings = SiteSetting::first();
+        return view('front.airport', compact('settings'));
+    }
+
+    
 
     public function massageChairs($slug){
         $settings = SiteSetting::first();

@@ -11,6 +11,8 @@ use App\Http\Controllers\BlogController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/massage-chairs-for-hire', [HomeController::class, 'massageChairsForHire'])->name('massage-chairs-for-hire');
+Route::get('/wellness-at-the-Airport', [HomeController::class, 'airport'])->name('airport');
+
 
 Route::get('/news-updates', [HomeController::class, 'news'])->name('news');
 Route::get('/about-us', [HomeController::class, 'about'])->name('about-us');
