@@ -22,22 +22,24 @@
       <div class="about-area overflow-hidden overflow-hidden space" id="about-sec">
          <div class="container">
             <div class="row gy-4">
+               <h2 class="sec-title text-anime-style-3"><span class="fw-normal"></span> Wellness at the Jomo Kenyatta International Airport.</h2>
                <div class="col-xxl-6">
                   <div class="img-box4 me-xl-3">
-                     <div class="img1 reveal"><img src="{{asset('uploads/airport/20250531_21d4012.jpg')}}" alt="About"></div>
                      <div class="img1 reveal"><img src="{{asset('uploads/airport/202505aa31_213955.jpg')}}" alt="About"></div>
-                    
+                     <div class="img1 reveal"><img src="{{asset('uploads/airport/20250531_21d4012.jpg')}}" alt="About"></div>
                   </div>
                </div>
+               
                <div class="col-xxl-6 mb-30 mb-xl-0">
                   <div class="title-area">
-                     <h2 class="sec-title text-anime-style-3"><span class="fw-normal">Wawa Fitness Center</span> Wellness at the Airport</h2>
+                     
                      <p class="fs-18 mb-30 pe-xl-5 wow fadeInUp">
                         Welcome to Wawa Fitness Center, your wellness haven at Jomo Kenyatta International Airport (JKIA). Whether you're a frequent flyer, airport staff, or a traveler on a layover, we offer a convenient and revitalizing space to help you relax, recharge, and stay on top of your wellness goals—even while in transit.
                         <br><br>
                         Our unique location at Terminal 1B, Gate 11 allows you to take a meaningful wellness break right within the airport. We understand the stresses of travel, and that's why Wawa is designed to give your body and mind the relief it needs through our range of therapeutic services.
 
-                        <h6>What We Offer</h6>
+                        <br><br>
+                        <strong>What We Offer</strong><br>
                         Full-body massage chairs: Experience the ultimate in automated relaxation. From a quick 5-minute session to a full 30-minute deep massage, our chairs are perfect for relieving travel fatigue.
 
                         <br><br>
@@ -45,7 +47,10 @@
 
                         Soothing ambiance with calming music, aromatherapy diffusers, and wireless charging stations for your convenience.<br><br>
 
-                        Carefully curated wellness products including portable massagers and recovery tools available for sale.<br>
+                        Carefully curated wellness products including portable massagers and recovery tools available for sale.<br><br>
+                        All our massage chairs are thoroughly sanitised after every session to ensure a clean, hygienic, and relaxing experience. At WAWA, cleanliness is a top priority.
+
+                        
 
                      </p>
                   </div>
@@ -87,7 +92,7 @@
         <div class="overflow-hidden space">
          <div class="container">
             <div class="title-area text-center mb-40">
-               <span class="sub-title text-anime-style-2">Why Choose Wawa at the Airport?</span>
+               <span class="sub-title text-anime-style-2">Why Choose WAWA at the Airport?</span>
                <h2 class="sec-title text-anime-style-3"><strong>Relax • Relief • Recover</strong> </h2>
                <p class="sec-text wow fadeInUp">
                 
