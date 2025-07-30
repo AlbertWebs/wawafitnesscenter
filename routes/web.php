@@ -9,6 +9,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\LogVisitor;
+use App\Http\Controllers\AdminAuthController;
+use Illuminate\Support\Facades\Auth;
 
 Route::middleware(['web', LogVisitor::class])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -40,24 +42,37 @@ Route::middleware(['web', LogVisitor::class])->group(function () {
 });
 
 
+Route::get('/login-admin', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+Route::post('/login-admin', [AdminAuthController::class, 'login']);
 
 // Auth::routes();
 
-Route::middleware(['web'])->group(function () {
-    Route::get('admin/', [AdminController::class, 'index'])->name('admin.index');
-    Route::resource('admin/massage-chairs', MassageChairController::class);
-    Route::resource('admin/categories', CategoryController::class);
-    Route::resource('admin/services', ServiceController::class);
-    Route::resource('admin/blogs', BlogController::class); // Add backend resource route for blogs
+// Route::middleware(['auth'])->prefix('admin')->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('admin.dashboard'); // create this view
+//     });
+// });
+
+
+Route::middleware(['auth'])->prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+    Route::resource('/massage-chairs', MassageChairController::class);
+    Route::resource('/categories', CategoryController::class);
+    Route::resource('/services', ServiceController::class);
+    Route::resource('/blogs', BlogController::class); // Add backend resource route for blogs
     
-    Route::get('admin/massage-chairs/add-image/{id}', [MassageChairController::class, 'addImages'])->name('massage-chairs.add.image');
+    Route::get('/massage-chairs/add-image/{id}', [MassageChairController::class, 'addImages'])->name('massage-chairs.add.image');
     //admin.blogs.index
-    Route::get('admin/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
-    Route::get('admin/site-settings', [SiteSettingController::class, 'edit'])->name('site-settings.edit');
-    Route::post('admin/site-settings', [SiteSettingController::class, 'update'])->name('site-settings.update');
+    Route::get('/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
+    Route::get('/site-settings', [SiteSettingController::class, 'edit'])->name('site-settings.edit');
+    Route::post('/site-settings', [SiteSettingController::class, 'update'])->name('site-settings.update');
 });
 
 
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect('/login-admin');
+})->name('logout');
 
 
 
