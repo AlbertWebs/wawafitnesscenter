@@ -8,6 +8,17 @@ use Carbon\Carbon;
 
 class AdminController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth'); // restricts access to logged-in users
+    }
+
+    
+   
     public function index()
     {
         return view('admin.index', [
