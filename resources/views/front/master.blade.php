@@ -290,23 +290,7 @@
          </svg>
       </div>
       
-      {{-- <script src="{{asset('theme/assets/js/vendor/jquery-3.7.1.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/swiper-bundle.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/bootstrap.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/jquery.magnific-popup.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/jquery.counterup.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/circle-progress.js')}}"></script>
-      <script src="{{asset('theme/assets/js/jquery-ui.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/imagesloaded.pkgd.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/isotope.pkgd.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/nice-select.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/wow.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/threesixty.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/panolens.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/gsap.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/ScrollTrigger.min.js')}}"></script>
-      <script src="{{asset('theme/assets/js/SplitText.js')}}"></script>
-      <script src="{{asset('theme/assets/js/main.js')}}"></script> --}}
+
    </body>
 
 </html>
