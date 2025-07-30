@@ -129,7 +129,7 @@
          <div class="preloader-inner">
             <img src="{{ asset('uploads/logo.png') }}" alt="img">
             <div class="heart-rate">
-               <img src="/theme/assets/img/shape/preloader.svg" alt="">
+               <img src="{{asset('theme/assets/img/shape/preloader.svg')}}" alt="">
                <div class="fade-in"></div>
                <div class="fade-out"></div>
             </div>
@@ -289,23 +289,23 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
          </svg>
       </div>
-      <script src="/theme/assets/js/vendor/jquery-3.7.1.min.js"></script>
-      <script src="/theme/assets/js/swiper-bundle.min.js"></script>
-      <script src="/theme/assets/js/bootstrap.min.js"></script>
-      <script src="/theme/assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="/theme/assets/js/jquery.counterup.min.js"></script>
-      <script src="/theme/assets/js/circle-progress.js"></script>
-      <script src="/theme/assets/js/jquery-ui.min.js"></script>
-      <script src="/theme/assets/js/imagesloaded.pkgd.min.js"></script>
-      <script src="/theme/assets/js/isotope.pkgd.min.js"></script>
-      <script src="/theme/assets/js/nice-select.min.js"></script>
-      <script src="/theme/assets/js/wow.min.js"></script>
-      <script src="/theme/assets/js/threesixty.min.js"></script>
-      <script src="/theme/assets/js/panolens.min.js"></script>
-      <script src="/theme/assets/js/gsap.min.js"></script>
-      <script src="/theme/assets/js/ScrollTrigger.min.js"></script>
-      <script src="/theme/assets/js/SplitText.js"></script>
-      <script src="/theme/assets/js/main.js"></script>
+      <script src="{{asset('theme/assets/js/vendor/jquery-3.7.1.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/swiper-bundle.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/bootstrap.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery.magnific-popup.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery.counterup.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/circle-progress.js')}}"></script>
+      <script src="{{asset('theme/assets/js/jquery-ui.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/imagesloaded.pkgd.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/isotope.pkgd.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/nice-select.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/wow.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/threesixty.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/panolens.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/gsap.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/ScrollTrigger.min.js')}}"></script>
+      <script src="{{asset('theme/assets/js/SplitText.js')}}"></script>
+      <script src="{{asset('theme/assets/js/main.js')}}"></script>
    </body>
 
 </html>

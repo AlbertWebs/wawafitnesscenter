@@ -125,7 +125,7 @@
          <div class="preloader-inner">
             <img src="{{ asset('uploads/logo.png') }}" alt="img">
             <div class="heart-rate">
-               <img src="/theme/assets/img/shape/preloader.svg" alt="">
+               <img src=" {{ asset('/theme/assets/img/shape/preloader.svg')}}" alt="">
                <div class="fade-in"></div>
                <div class="fade-out"></div>
             </div>
