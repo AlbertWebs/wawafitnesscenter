@@ -41,7 +41,7 @@ Route::middleware(['web', LogVisitor::class])->group(function () {
 
 
 
-Auth::routes();
+// Auth::routes();
 
 Route::middleware(['web'])->group(function () {
     Route::get('admin/', [AdminController::class, 'index'])->name('admin.index');
