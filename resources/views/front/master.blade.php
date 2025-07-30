@@ -289,7 +289,8 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
          </svg>
       </div>
-      <script src="{{asset('theme/assets/js/vendor/jquery-3.7.1.min.js')}}"></script>
+      
+      {{-- <script src="{{asset('theme/assets/js/vendor/jquery-3.7.1.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/swiper-bundle.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/bootstrap.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/jquery.magnific-popup.min.js')}}"></script>
@@ -305,7 +306,7 @@
       <script src="{{asset('theme/assets/js/gsap.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/ScrollTrigger.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/SplitText.js')}}"></script>
-      <script src="{{asset('theme/assets/js/main.js')}}"></script>
+      <script src="{{asset('theme/assets/js/main.js')}}"></script> --}}
    </body>
 
 </html>
