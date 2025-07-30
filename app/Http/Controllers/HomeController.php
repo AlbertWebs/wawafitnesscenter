@@ -11,6 +11,10 @@ use Mail;
 
 class HomeController extends Controller
 {
+    public function home()
+{
+    return view('home');
+}
     public function index()
     {
         $settings = SiteSetting::first();
