@@ -118,11 +118,11 @@
       <link rel="preconnect" href="https://fonts.googleapis.com/">
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Outfit:wght@100..900&amp;family=Saira:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="/theme/assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/fontawesome.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/magnific-popup.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/swiper-bundle.min.css">
-      <link rel="stylesheet" href="/theme/assets/css/style.css">
+      <link rel="stylesheet" href="{{ asset('theme/assets/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{ asset('theme/assets/css/fontawesome.min.css')}}">
+      <link rel="stylesheet" href="{{ asset('theme/assets/css/magnific-popup.min.css')}}">
+      <link rel="stylesheet" href="{{ asset('theme/assets/css/swiper-bundle.min.css')}}">
+      <link rel="stylesheet" href="{{ asset('theme/assets/css/style.css')}}">
    </head>
    <body>
       
