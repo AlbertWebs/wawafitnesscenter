@@ -19,7 +19,7 @@
       <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
       <meta property="og:title" content="Relax on Layovers at JKIA – WAWA Fitness Center Airport Massage Chairs">
       <meta property="og:description" content="Waiting for a flight at JKIA? Recharge with a full-body or zero-gravity massage in our premium airport massage chairs. Fast service for layovers and travelers.">
-      <meta property="og:image" content="https://wawafitnesscenter.co.ke/uploads/preview.png">
+      <meta property="og:image" content="https://wawafitnesscenter.co.ke/uploads/previews.png">
       <meta property="og:image:alt" content="Traveler relaxing in a zero gravity massage chair at JKIA during layover">
 
       <!-- Twitter -->
@@ -27,7 +27,7 @@
       <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
       <meta name="twitter:title" content="Airport Massage at JKIA | WAWA Fitness Center for Layovers">
       <meta name="twitter:description" content="Make the most of your layover at Jomo Kenyatta International Airport with a relaxing massage in our premium chairs. Wholesale & retail available.">
-      <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/uploads/preview.png">
+      <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/uploads/previews.png">
 
       <!-- Business Contact Meta -->
       <meta name="business:contact_data:street_address" content="Jomo Kenyatta International Airport (JKIA), Terminal 1B International Departures, Gate 11">
