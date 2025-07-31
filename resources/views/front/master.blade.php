@@ -26,6 +26,7 @@
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
       <meta name="twitter:title" content="Airport Massage at JKIA | WAWA Fitness Center for Layovers">
+      <meta name="google-site-verification" content="Uz_e9ysCFlFqN_Ztv7_k9ZVRg41BcOCoSwEzQC-O5s8" />
       <meta name="twitter:description" content="Make the most of your layover at Jomo Kenyatta International Airport with a relaxing massage in our premium chairs. Wholesale & retail available.">
       <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/uploads/preview.jpg">
 
@@ -35,6 +36,7 @@
       <meta name="business:contact_data:region" content="Nairobi">
       <meta name="business:contact_data:country_name" content="Kenya">
       <meta name="business:contact_data:phone_number" content="+254 708 666 527">
+
 
       <!-- JSON-LD Schema -->
       <script type="application/ld+json">
