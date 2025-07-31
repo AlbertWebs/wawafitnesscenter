@@ -20,4 +20,4 @@
       
          {{-- <li><a href="{{route('news')}}">News Updates</a></li>
          <li><a href="{{route('contact')}}">Contact Us</a></li> --}}
-</ul>
+</ul>    

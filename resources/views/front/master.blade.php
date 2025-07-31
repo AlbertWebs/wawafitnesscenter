@@ -186,15 +186,15 @@
                      <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Products</h3>
                         <div class="menu-all-pages-container">
-                          <?php 
-   $Categories = \App\Models\Category::all();   
-?>
-<ul class="menu">
-   @foreach($Categories as $cat)
-   <li><a href="{{route('massage-chairs-categories', $cat->slug)}}">{{$cat->name}}</a></li>
-   @endforeach
-</ul>
-
+                           <?php 
+                              $Categories = \App\Models\Category::all();   
+                           ?>
+                           <ul class="menu">
+                              @foreach($Categories as $cat)
+                              <li><a href="{{route('massage-chairs-categories', $cat->slug)}}">{{$cat->name}}</a></li>
+                              @endforeach
+                           
+                           </ul>
                         </div>
                      </div>
                   </div>

@@ -87,7 +87,8 @@
                         <div class="icon-btn"><i class="fa-solid fa-envelope"></i></div>
                         <div class="media-body">
                            <h5 class="box-title">Email Address</h5>
-                           <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a> <a href="mailto:hire@wawafitnesscenter.co.ke">hire@wawafitnesscenter.co.ke</a>
+                           <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a> 
+                           {{-- <a href="mailto:hire@wawafitnesscenter.co.ke">hire@wawafitnesscenter.co.ke</a> --}}
                         </div>
                      </div>
                   </div>
