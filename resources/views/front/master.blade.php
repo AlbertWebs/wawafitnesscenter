@@ -8,77 +8,87 @@
       <meta name="robots" content="INDEX,FOLLOW">
       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
-    <title>WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi | Full Body & Zero Gravity Massage Equipment</title>
-    <meta name="description" content="WAWA Fitness Center is Nairobi's trusted supplier of premium massage chairs and fitness equipment. We offer both wholesale and retail options with fast delivery across Kenya.">
-    <meta name="keywords" content="massage chairs Nairobi, zero gravity massage chairs, full body massage equipment, wholesale fitness chairs, retail massage chairs Kenya, WAWA Fitness Center">
-    <meta name="robots" content="index, follow">
-     <link rel="canonical" href="https://wawafitnesscenter.co.ke/">
+      <title>Airport Massage & Relaxation at JKIA | WAWA Fitness Center – Layovers & Flight Waits</title>
+      <meta name="description" content="Relax during layovers at Jomo Kenyatta International Airport. WAWA Fitness Center offers premium massage chairs for travelers waiting for flights—wholesale & retail options available with fast service in Nairobi.">
+      <meta name="keywords" content="JKIA massage chairs, airport massage Nairobi, layover relaxation Nairobi, massage during layovers, flight wait massage JKIA, zero gravity massage chairs, full body massage chairs Nairobi, WAWA Fitness Center, airport wellness Kenya">
+      <meta name="robots" content="index, follow">
+      <link rel="canonical" href="https://wawafitnesscenter.co.ke/">
 
-       <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
-    <meta property="og:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta property="og:description" content="Find top-quality massage chairs and fitness equipment at WAWA Fitness Center, located at JKIA Terminal 1B International Departures, Gate 11. We serve both retail and wholesale customers.">
-    <meta property="og:image" content="https://wawafitnesscenter.co.ke/assets/images/logo.png">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://wawafitnesscenter.co.ke/">
+      <meta property="og:title" content="Relax on Layovers at JKIA – WAWA Fitness Center Airport Massage Chairs">
+      <meta property="og:description" content="Waiting for a flight at JKIA? Recharge with a full-body or zero-gravity massage in our premium airport massage chairs. Fast service for layovers and travelers.">
+      <meta property="og:image" content="https://wawafitnesscenter.co.ke/assets/uploads/favicon.png">
+      <meta property="og:image:alt" content="Traveler relaxing in a zero gravity massage chair at JKIA during layover">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
-    <meta name="twitter:title" content="WAWA Fitness Center – Wholesale & Retail Massage Chairs in Nairobi">
-    <meta name="twitter:description" content="Visit WAWA Fitness Center for quality massage chairs and fitness products in Kenya. Wholesale & retail deals available.">
-    <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/assets/images/social-preview.jpg">
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:url" content="https://wawafitnesscenter.co.ke/">
+      <meta name="twitter:title" content="Airport Massage at JKIA | WAWA Fitness Center for Layovers">
+      <meta name="twitter:description" content="Make the most of your layover at Jomo Kenyatta International Airport with a relaxing massage in our premium chairs. Wholesale & retail available.">
+      <meta name="twitter:image" content="https://wawafitnesscenter.co.ke/assets/uploads/favicon.png">
 
-    <!-- Business Contact Meta -->
-     <meta name="business:contact_data:street_address" content="JKIA Terminal 1B International Departures, Gate 11">
+      <!-- Business Contact Meta -->
+      <meta name="business:contact_data:street_address" content="Jomo Kenyatta International Airport (JKIA), Terminal 1B International Departures, Gate 11">
       <meta name="business:contact_data:locality" content="Nairobi">
       <meta name="business:contact_data:region" content="Nairobi">
       <meta name="business:contact_data:country_name" content="Kenya">
       <meta name="business:contact_data:phone_number" content="+254 708 666 527">
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Store",
-        "name": "WAWA Fitness Center",
-        "image": "https://wawafitnesscenter.co.ke/assets/images/logo.png",
-        "description": "WAWA Fitness Center is a Nairobi-based store specializing in wholesale and retail massage chairs and fitness equipment. Visit us at Lunar Amusement Park, Kiambu Road.",
-        "url": "https://wawafitnesscenter.co.ke",
-        "telephone": "+254 708 666 527",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "JKIA Terminal 1B International Departures, Gate 11",
-        "addressLocality": "Kiambu",
-        "addressRegion": "Nairobi",
-        "postalCode": "00100",
-        "addressCountry": "KE"
-        },
-        "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -1.2006,
-        "longitude": 36.8219
-        },
-        "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
+      <!-- JSON-LD Schema -->
+      <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "WAWA Fitness Center",
+      "image": "https://wawafitnesscenter.co.ke/assets/images/logo.png",
+      "description": "Relax during layovers at Jomo Kenyatta International Airport with premium full-body and zero-gravity massage chairs. Ideal for travelers waiting for flights.",
+      "url": "https://wawafitnesscenter.co.ke",
+      "telephone": "+254708666527",
+      "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "Terminal 1B International Departures, Gate 11, Jomo Kenyatta International Airport",
+         "addressLocality": "Nairobi",
+         "addressRegion": "Nairobi",
+         "postalCode": "00100",
+         "addressCountry": "KE"
+      },
+      "geo": {
+         "@type": "GeoCoordinates",
+         "latitude": -1.3192,
+         "longitude": 36.9278
+      },
+      "openingHoursSpecification": [
+         {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
             "Monday",
             "Tuesday",
             "Wednesday",
             "Thursday",
             "Friday",
-            "Saturday"
-        ],
-        "opens": "08:30",
-        "closes": "18:00"
-        }],
-        "sameAs": [
-        "https://www.facebook.com/WAWAFitnessCenter",
-        "https://www.instagram.com/WAWAFitnessCenter",
-        "https://x.com/WAWAfcKENYA",
-        "https://www.linkedin.com/company/massage-chairs-kenya/"
-        ]
-    }
-    </script>
+            "Saturday",
+            "Sunday"
+            ],
+            "opens": "08:30",
+            "closes": "18:00"
+         }
+      ],
+      "sameAs": [
+         "https://www.facebook.com/WAWAFitnessCenter",
+         "https://www.instagram.com/WAWAFitnessCenter",
+         "https://x.com/WAWAfcKENYA",
+         "https://www.linkedin.com/company/massage-chairs-kenya/"
+      ],
+      "service": {
+         "@type": "Service",
+         "name": "Airport Layover Massage",
+         "description": "Full-body and zero-gravity massage sessions for travelers during layovers at JKIA to relax and recover before flights."
+      }
+      }
+      </script>
+
 
     <!--Start of Tawk.to Script-->
    <script type="text/javascript">
