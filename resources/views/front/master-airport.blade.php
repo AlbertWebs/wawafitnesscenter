@@ -126,9 +126,24 @@
       <link rel="stylesheet" href="{{asset('theme/assets/css/magnific-popup.min.css')}}">
       <link rel="stylesheet" href="{{asset('theme/assets/css/swiper-bundle.min.css')}}">
       <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
+       {{--  --}}
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T5QLXSZX');</script>
+      <!-- End Google Tag Manager -->
+      {{--  --}}
    </head>
    <body>
      
+      {{--  --}}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5QLXSZX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      {{--  --}}
        <div class="preloader">
          <button class="th-btn preloaderCls">Cancel Preloader</button>
          <div class="preloader-inner">
