@@ -139,7 +139,7 @@
                                  <div class="call-icon"><a href="tel:{{ preg_replace("/\\s+/", "", $siteSettings->phone) }}"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:{{ $siteSettings->phone }}">Phone 1: {{ $siteSettings->phone }}</a> · <a href="tel:{{ $siteSettings->phone_2 }}">Phone 2: {{ $siteSettings->phone_2 }}</a></p>
+                                    <p class="call-link"><a href="tel:{{ $siteSettings->phone }}">{{ $siteSettings->phone }}</a> · <a href="tel:{{ $siteSettings->phone_2 }}">{{ $siteSettings->phone_2 }}</a></p>
                                  </div>
                               </div>
                            </div>

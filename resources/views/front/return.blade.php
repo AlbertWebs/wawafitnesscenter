@@ -19,7 +19,7 @@
           <div>
             <h1>Return Policy</h1>
             <div>
-                At Wawa Fitness Center, we accept returns within 7 days of purchase for unused products in their original packaging and condition. Customers must provide a valid receipt or proof of purchase. Refunds will be processed after inspection, and shipping fees are non-refundable. Customized or special-order items are not eligible for return. To initiate a return, please contact us at <div>{{ $siteSettings->email }}</div> or call Phone 1: <div> {{ $siteSettings->phone }}</div> or Phone 2: <div>{{ $siteSettings->phone_2 }}</div>.
+                At Wawa Fitness Center, we accept returns within 7 days of purchase for unused products in their original packaging and condition. Customers must provide a valid receipt or proof of purchase. Refunds will be processed after inspection, and shipping fees are non-refundable. Customized or special-order items are not eligible for return. To initiate a return, please email {{ $siteSettings->email }} or call {{ $siteSettings->phone }} / {{ $siteSettings->phone_2 }}.
             </div>
          </div>
 

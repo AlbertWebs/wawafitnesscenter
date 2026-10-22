@@ -79,8 +79,8 @@
                         <div class="media-body">
                            <h5 class="box-title">Phone Numbers</h5>
                            <p class="box-text">
-                              Phone 1: <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a><br>
-                              Phone 2: <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a>
+                              <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a><br>
+                              <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a>
                            </p>
                         </div>
                      </div>

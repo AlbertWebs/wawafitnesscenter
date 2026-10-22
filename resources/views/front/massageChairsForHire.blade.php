@@ -113,8 +113,7 @@
                                 <h4>📞 Book Your Massage Chair Today</h4>
                                 <p>Ready to elevate your next event, office space, or private gathering? Reach out for a <strong>free consultation and quote</strong>:</p>
                                 <ul>
-                                    <li><strong>Call/WhatsApp, Phone 1:</strong> {{ $siteSettings->phone }}</li>
-                                    <li><strong>Call, Phone 2:</strong> {{ $siteSettings->phone_2 }}</li>
+                                    <li><strong>Call/WhatsApp:</strong> {{ $siteSettings->phone }} / {{ $siteSettings->phone_2 }}</li>
                                     <li><strong>Email:</strong> hire@wawafitness.co.ke</li>
                                 </ul>
 

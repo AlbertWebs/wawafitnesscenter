@@ -113,7 +113,7 @@
                         <div>
                         If you have any questions about this Privacy Policy, please contact us:<br>
                         📧 Email: <div>{{ $siteSettings->email }}</div><br>
-                        📞 Phone 1: <div> {{ $siteSettings->phone }}</div><br>📞 Phone 2: <div>{{ $siteSettings->phone_2 }}</div>
+                        📞 <div> {{ $siteSettings->phone }}</div><br>📞 <div>{{ $siteSettings->phone_2 }}</div>
                         </div>
                     </div>
                     </div>
