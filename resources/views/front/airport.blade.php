@@ -76,7 +76,7 @@
                            </div>
                            <div class="box-right-wrapp">
                               <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/airport/20250531_21d4012.jpg')}}" alt=""></div>
-                              <div class="service-btn"><a href="tel:+254 708 666 527" class="th-btn black-border"> Call Us<i class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                              <div class="service-btn"><a href="tel:{{ preg_replace("/\\s+/", "", $siteSettings->phone) }}" class="th-btn black-border"> Call Us<i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
                      </div>

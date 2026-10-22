@@ -17,10 +17,8 @@ class HomeController extends Controller
 }
     public function index()
     {
-        $settings = SiteSetting::first();
-        $chairs = MassageChair::with('images', 'category')->get();
         $categories = Category::all();
-        return view('front.index', compact('settings', 'chairs', 'categories'));
+        return view('front.index', compact('categories'));
     }
 
     public function about(){
@@ -73,8 +71,9 @@ class HomeController extends Controller
         ]);
 
         // Example: Send email (optional, or you could store in DB)
-        Mail::raw("Message from: {$validated['name']}\nPhone: {$validated['number']}\n\n{$validated['message']}", function($mail) use ($validated) {
-            $mail->to('info@wawafitnesscenter.co.ke')
+        $recipient = SiteSetting::first()?->email ?: 'info@wawafitnesscenter.co.ke';
+        Mail::raw("Message from: {$validated['name']}\nPhone: {$validated['number']}\n\n{$validated['message']}", function($mail) use ($validated, $recipient) {
+            $mail->to($recipient)
                 ->subject($validated['subject'])
                 ->from($validated['email'], $validated['name']);
         });

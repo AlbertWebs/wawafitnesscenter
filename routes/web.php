@@ -9,10 +9,11 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\LogVisitor;
+use App\Http\Middleware\ShareSiteSettings;
 use App\Http\Controllers\AdminAuthController;
 use Illuminate\Support\Facades\Auth;
 
-Route::middleware(['web', LogVisitor::class])->group(function () {
+Route::middleware(['web', LogVisitor::class, ShareSiteSettings::class])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
     Route::get('/massage-chairs-for-hire', [HomeController::class, 'massageChairsForHire'])->name('massage-chairs-for-hire');

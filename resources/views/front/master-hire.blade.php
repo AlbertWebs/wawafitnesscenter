@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-  
+
    <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,13 +12,13 @@
     <meta name="description" content="Hire premium massage chairs in Nairobi from WAWA Fitness Center. Ideal for events, offices, and personal use. Affordable rates and fast delivery across Kenya.">
     <meta name="keywords" content="massage chairs for hire Nairobi, rent massage chairs Kenya, zero gravity massage chairs for hire, full body massage chair rental, massage equipment hire Nairobi, WAWA Fitness Center">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{url('/')}}/massage-chairs-for-hire"> 
+    <link rel="canonical" href="{{url('/')}}/massage-chairs-for-hire">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{url('/')}}/massage-chairs-for-hire">
     <meta property="og:title" content="Massage Chairs for Hire in Nairobi - WAWA Fitness Center ">
-    <meta property="og:description" content="Rent top-quality massage chairs from WAWA Fitness Center, located at JKIA Terminal 1B International Departures, Gate 11. We offer flexible hire packages across Kenya.">
+    <meta property="og:description" content="Rent top-quality massage chairs from WAWA Fitness Center, located at {{ $siteSettings->address }}. We offer flexible hire packages across Kenya.">
     <meta property="og:image" content="{{url('/')}}/assets/images/logo.png">
 
     <!-- Twitter -->
@@ -26,33 +26,33 @@
     <meta name="twitter:url" content="{{url('/')}}/massage-chairs-for-hire">
     <meta name="twitter:title" content="Massage Chairs for Hire in Nairobi - WAWA Fitness Center ">
     <meta name="twitter:description" content="Hire massage chairs for your event, office, or personal use in Nairobi. Quality, comfort, and fast delivery guaranteed.">
-    <meta name="twitter:image" content="{{url('/')}}/assets/images/social-preview.jpg">
+    <meta name="twitter:image" content="{{ !empty($siteSettings->social_image) ? asset('storage/' . $siteSettings->social_image) : asset('uploads/preview.jpg') }}">
 
 
     <!-- Business Contact Meta -->
-    <meta name="business:contact_data:street_address" content="JKIA Terminal 1B International Departures, Gate 11">
-    <meta name="business:contact_data:locality" content="Nairobi">
-    <meta name="business:contact_data:region" content="Nairobi">
-    <meta name="business:contact_data:country_name" content="Kenya">
-    <meta name="business:contact_data:phone_number" content="+254 708 666 527">
+    <meta name="business:contact_data:street_address" content="{{ $siteSettings->address }}">
+    <meta name="business:contact_data:locality" content="{{ $siteSettings->city }}">
+    <meta name="business:contact_data:region" content="{{ $siteSettings->region }}">
+    <meta name="business:contact_data:country_name" content="{{ $siteSettings->country }}">
+    <meta name="business:contact_data:phone_number" content="{{ $siteSettings->phone }}">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Store",
-        "name": "WAWA Fitness Center",
+        "name": "{{ $siteSettings->sitename }}",
         "image": "{{url('/')}}/assets/images/logo.png",
         "description": "WAWA Fitness Center is a Nairobi-based store specializing in wholesale and retail massage chairs and fitness equipment. Visit us at Lunar Amusement Park, Kiambu Road.",
         "url": "{{url('/')}}/massage-chairs-for-hire",
-        "telephone": "+254 708 666 527",
+        "telephone": "{{ $siteSettings->phone }}",
         "address": {
         "@type": "PostalAddress",
-        "streetAddress": "JKIA Terminal 1B International Departures, Gate 11",
-        "addressLocality": "Kiambu",
-        "addressRegion": "Nairobi",
-        "postalCode": "00100",
-        "addressCountry": "KE"
+        "streetAddress": "{{ $siteSettings->address }}",
+        "addressLocality": "{{ $siteSettings->city }}",
+        "addressRegion": "{{ $siteSettings->region }}",
+        "postalCode": "{{ $siteSettings->postal_code }}",
+        "addressCountry": "{{ $siteSettings->country }}"
         },
         "geo": {
         "@type": "GeoCoordinates",
@@ -73,10 +73,11 @@
         "closes": "18:00"
         }],
         "sameAs": [
-        "https://www.facebook.com/WAWAFitnessCenter",
-        "https://www.instagram.com/WAWAFitnessCenter",
-        "https://x.com/WAWAfcKENYA",
-        "https://www.linkedin.com/company/massage-chairs-kenya/"
+        "{{ $siteSettings->facebook_url }}",
+        "{{ $siteSettings->instagram_url }}",
+         "{{ $siteSettings->youtube_url }}",
+        "{{ $siteSettings->x_url }}",
+        "{{ $siteSettings->linkedin_url }}"
         ""
         ]
     }
@@ -88,7 +89,7 @@
       (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
       s1.async=true;
-      s1.src='https://embed.tawk.to/68469ec575ee061917b3299d/1it9todsv';
+      s1.src='https://embed.tawk.to/{{ $siteSettings->tawk_property_id }}/{{ $siteSettings->tawk_widget_id }}';
       s1.charset='UTF-8';
       s1.setAttribute('crossorigin','*');
       s0.parentNode.insertBefore(s1,s0);
@@ -96,21 +97,21 @@
    </script>
    <!--End of Tawk.to Script-->
 
-      <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('uploads/favicon.png') }}">
-      <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="57x57" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="icon" type="image/png" sizes="192x192" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ !empty($siteSettings->favicon) ? asset('storage/' . $siteSettings->favicon) : asset('uploads/favicon.png') }}">
 
-      
+
       <link rel="manifest" href="{{ asset('theme/assets/img/favicons/manifest.json') }}">
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="{{ asset('theme/assets/img/favicons/ms-icon-144x144.png') }}">
@@ -125,11 +126,11 @@
       <link rel="stylesheet" href="{{ asset('theme/assets/css/style.css')}}">
    </head>
    <body>
-      
+
       <div class="preloader">
          <button class="th-btn preloaderCls">Cancel Preloader</button>
          <div class="preloader-inner">
-            <img src="{{ asset('uploads/logo.png') }}" alt="img">
+            <img src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt="img">
             <div class="heart-rate">
                <img src="/theme/assets/img/shape/preloader.svg" alt="">
                <div class="fade-in"></div>
@@ -137,8 +138,8 @@
             </div>
          </div>
       </div>
-      
-    
+
+
       <div class="popup-search-box d-none d-lg-block">
          <button class="searchClose"><i class="fal fa-times"></i></button>
          <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i class="fal fa-search"></i></button></form>
@@ -146,7 +147,7 @@
       <div class="th-menu-wrapper">
          <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo"><a href="{{url('/')}}"><img src="/uploads/logo.png" alt="Wawa Fitness Center"></a></div>
+            <div class="mobile-logo"><a href="{{url('/')}}"><img src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt="Wawa Fitness Center"></a></div>
             <div class="th-mobile-menu">
                @include('front.partials.menu')
             </div>
@@ -163,7 +164,7 @@
                   <div class="col-md-6 col-xxl-3 col-xl-4">
                      <div class="widget footer-widget mb-0">
                         <div class="th-widget-about">
-                           <div class="about-logo"><a href="{{url('/')}}"><img src="{{asset('uploads/logo.png')}}" alt="Wawa Fitness Center Logo"></a></div>
+                           <div class="about-logo"><a href="{{url('/')}}"><img src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt="Wawa Fitness Center Logo"></a></div>
                            <p class="about-text">Engineered for comfort and effectiveness, the chair delivers a comprehensive neck and back massage using a variety of techniques, including kneading, tapping, pressing, knocking, and Shiatsu.</p>
                         </div>
                      </div>
@@ -178,8 +179,8 @@
                               <li><a href="{{route('health-benefits')}}">Health Benefits</a></li>
                               <li><a href="{{route('contact')}}">Massage Services</a></li>
                               <li><a href="{{url('/')}}/massage-chairs/4d-massage-chair">Massage Chairs</a></li>
-                          
-                              
+
+
                            </ul>
                         </div>
                      </div>
@@ -188,14 +189,14 @@
                      <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Products</h3>
                         <div class="menu-all-pages-container">
-                           <?php 
-                              $Categories = \App\Models\Category::all();   
+                           <?php
+                              $Categories = \App\Models\Category::all();
                            ?>
                            <ul class="menu">
                               @foreach($Categories as $cat)
                               <li><a href="{{route('massage-chairs-categories', $cat->slug)}}">{{$cat->name}}</a></li>
                               @endforeach
-                           
+
                            </ul>
                         </div>
                      </div>
@@ -235,9 +236,10 @@
                   <div class="col-xl-4">
                      <div class="footer-widget-about">
                         <div class="th-widget-about">
-                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:++254 708 666 527">+254 708 666 527 </a></span></p>
-                           <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:info@wawafitnesscenter.com">info@wawafitnesscenter.com</a></span></p>
-                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>JKIA Terminal 1B International Departures, Gate 11</p>
+                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">Phone 1: {{ $siteSettings->phone }}</a> · <a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">Phone 2: {{ $siteSettings->phone_2 }}</a></span></p>
+                           <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:{{ $siteSettings->email }}">{{ $siteSettings->email }}</a></span></p>
+                           <p class="footer-info"><i class="fas fa-map-marker-alt"></i>{{ $siteSettings->address }}</p>
+                           <p class="footer-info"><i class="far fa-clock"></i>{{ $siteSettings->opening_hours }}</p>
                         </div>
                      </div>
                   </div>
@@ -251,7 +253,7 @@
                         <div class="col-lg-6">
                            <div class="footer-top-btn">
                               <div class="btn-group justify-content-center justify-content-lg-end">
-                                 <a href="{{ route('contact') }}" class="th-btn">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a> 
+                                 <a href="{{ route('contact') }}" class="th-btn">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                                  <a href="{{ url('/') }}/massage-chairs/4d-massage-chair" class="th-btn style2">Our Products<i class="fa-light fa-arrow-right-long ms-2"></i></a></div>
                            </div>
                         </div>
@@ -263,17 +265,17 @@
                <div class="container">
                   <div class="row gy-2 align-items-center">
                      <div class="col-lg-5">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> {{date('Y')}} <a href="#">Wawa Fitness Center</a>. All Rights Reserved.</p>
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> {{date('Y')}} <a href="{{ rtrim($siteSettings->url, "/") }}">{{ $siteSettings->sitename }}</a>. All Rights Reserved.</p>
                      </div>
                      <div class="col-lg-7 text-center text-lg-end">
                         <div class="social-links">
                             <span class="title">Social Media:</span>
-                              <a target="new" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                             <a target="new" href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
-                              <a target="new" href="https://www.youtube.com/@wawafitnesscenter5166"><i class="fab fa-youtube"></i></a>
-                             <a target="new" href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
-                              <a target="new" href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
-                              <a target="new" href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+                              <a target="new" href="{{ $siteSettings->instagram_url }}"><i class="fab fa-instagram"></i></a>
+                             <a target="new" href="{{ $siteSettings->facebook_url }}"><i class="fab fa-facebook-f"></i></a>
+                              <a target="new" href="{{ $siteSettings->youtube_url }}"><i class="fab fa-youtube"></i></a>
+                             <a target="new" href="{{ $siteSettings->x_url }}"><i class="fab fa-twitter"></i></a>
+                              <a target="new" href="{{ $siteSettings->linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+                              <a target="new" href="https://wa.me/{{ preg_replace("/\\D+/", "", $siteSettings->whatsapp_number ?: $siteSettings->phone) }}"><i class="fab fa-whatsapp"></i></a>
                         </div>
                      </div>
                   </div>

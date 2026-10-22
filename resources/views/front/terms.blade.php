@@ -91,8 +91,8 @@
    <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
     <h4>Contact Us</h4>
      <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-      📧 Email:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">info@wawafitnesscenter.co.ke</div><br>
-      📞 Phone:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"> +254 708 666 527</div>
+      📧 Email:  <div class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">{{ $siteSettings->email }}</div><br>
+      📞 Phone 1: <div>{{ $siteSettings->phone }}</div><br>📞 Phone 2: <div>{{ $siteSettings->phone_2 }}</div>
     </div>
   </div>
 </div>

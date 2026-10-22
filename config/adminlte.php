@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
-    'title_prefix' => '',
-    'title_postfix' => '',
+    'title' => 'WAWA Admin',
+    'title_prefix' => 'WAWA · ',
+    'title_postfix' => ' Admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -62,9 +62,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
+    'logo' => '<b>WAWA</b>&nbsp; Studio',
+    'logo_img' => 'uploads/logo.png',
+    'logo_img_class' => 'brand-image',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'Admin Logo',
@@ -109,7 +109,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => true,
+        'enabled' => false,
         'mode' => 'fullscreen',
         'img' => [
             'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
@@ -195,9 +195,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-white navbar-light border-0',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -315,6 +315,14 @@ return [
             'text' => 'search',
         ],
         [
+            'text' => 'Dashboard',
+            'url'  => 'admin',
+            'icon' => 'fas fa-home',
+        ],
+        [
+            'header' => 'CONTENT',
+        ],
+        [
             'text' => 'Categories',
             'url'  => 'admin/categories',
             'icon' => 'fas fa-list',
@@ -330,34 +338,18 @@ return [
             'icon' => 'fas fa-blog',
         ],
         [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'manage-blog',
+            'text' => 'Services',
+            'url'  => 'admin/services',
+            'icon' => 'fas fa-concierge-bell',
         ],
-        
-        ['header' => 'account_settings'],
-        // [
-        //     'text' => 'profile',
-        //     'url' => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-user',
-        // ],
-        // [
-        //     'text' => 'change_password',
-        //     'url' => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-lock',
-        // ],
-       
+        [
+            'header' => 'WEBSITE',
+        ],
         [
             'text' => 'Site Settings',
             'url'  => 'admin/site-settings',
             'icon' => 'fas fa-cogs',
         ],
-        [
-            'text' => 'Services',
-            'url'  => 'admin/services',
-            'icon' => 'fas fa-concierge-bell',
-        ],
-        
     ],
 
     /*

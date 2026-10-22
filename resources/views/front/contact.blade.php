@@ -71,23 +71,24 @@
                         <div class="icon-btn"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="media-body">
                            <h5 class="box-title">Our Current Location</h5>
-                           <p class="box-text">JKIA terminal 1B International Departures, Gate II</p>
+                           <p class="box-text">{{ $siteSettings->address }}</p>
                         </div>
                      </div>
                      <div class="contact-media">
                         <div class="icon-btn"><i class="fa-light fa-phone"></i></div>
                         <div class="media-body">
-                           <h5 class="box-title">Phone Number</h5>
+                           <h5 class="box-title">Phone Numbers</h5>
                            <p class="box-text">
-                              <a href="tel:+254 708 666 527">+254 708 666 527</a> 
-                              {{-- <a href="tel:+254 708 666 527">+254 708 666 527</a></p> --}}
+                              Phone 1: <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a><br>
+                              Phone 2: <a href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a>
+                           </p>
                         </div>
                      </div>
                      <div class="contact-media">
                         <div class="icon-btn"><i class="fa-solid fa-envelope"></i></div>
                         <div class="media-body">
                            <h5 class="box-title">Email Address</h5>
-                           <a href="mailto:info@wawafitnesscenter.co.ke">info@wawafitnesscenter.co.ke</a> 
+                           <a href="mailto:{{ $siteSettings->email }}">{{ $siteSettings->email }}</a>
                            {{-- <a href="mailto:hire@wawafitnesscenter.co.ke">hire@wawafitnesscenter.co.ke</a> --}}
                         </div>
                      </div>
@@ -110,7 +111,7 @@
                               @foreach($categories as $cat)
                               <option value="{{$cat->name}}">{{$cat->name}}</option>
                               @endforeach
-                            
+
                            </select>
                         </div>
                         <div class="form-group col-12"><textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea> <i class="fal fa-comment"></i></div>
@@ -128,5 +129,5 @@
             <div class="contact-icon"><img src="assets/img/icon/location-dot.svg" alt=""></div>
          </div>
       </div>
-    
+
 @endsection

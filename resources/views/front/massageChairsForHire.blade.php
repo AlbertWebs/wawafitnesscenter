@@ -113,7 +113,8 @@
                                 <h4>📞 Book Your Massage Chair Today</h4>
                                 <p>Ready to elevate your next event, office space, or private gathering? Reach out for a <strong>free consultation and quote</strong>:</p>
                                 <ul>
-                                    <li><strong>Call/WhatsApp:</strong> +254 708 666 527</li>
+                                    <li><strong>Call/WhatsApp, Phone 1:</strong> {{ $siteSettings->phone }}</li>
+                                    <li><strong>Call, Phone 2:</strong> {{ $siteSettings->phone_2 }}</li>
                                     <li><strong>Email:</strong> hire@wawafitness.co.ke</li>
                                 </ul>
 
@@ -137,7 +138,7 @@
                      </div>
                      <div class="about-wrapp">
                         <div class="discount-wrapp">
-                           <div class="logo"><img src="{{asset('uploads/logo.png')}}" alt=""></div>
+                           <div class="logo"><img src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt=""></div>
                            <div class="discount-tag"><span class="discount-anime">Wawa Fitness Center * Massage services *</span></div>
                         </div>
                      </div>

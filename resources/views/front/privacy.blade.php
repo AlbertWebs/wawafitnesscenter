@@ -112,8 +112,8 @@
                         <h4>Contact Us</h4>
                         <div>
                         If you have any questions about this Privacy Policy, please contact us:<br>
-                        📧 Email: <div>info@wawafitnesscenter.co.ke</div><br>
-                        📞 Phone: <div> +254 708 666 527</div>
+                        📧 Email: <div>{{ $siteSettings->email }}</div><br>
+                        📞 Phone 1: <div> {{ $siteSettings->phone }}</div><br>📞 Phone 2: <div>{{ $siteSettings->phone_2 }}</div>
                         </div>
                     </div>
                     </div>

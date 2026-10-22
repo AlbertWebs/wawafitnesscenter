@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+@extends('layouts.admin')
 @section('title', 'Edit Category')
 @section('content_header')
     <h1>Edit Category</h1>

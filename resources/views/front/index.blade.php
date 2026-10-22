@@ -8,20 +8,20 @@
             <div class="swiper-wrapper">
                <div class="swiper-slide">
                   <div class="hero-inner">
-                     <div class="th-hero-bg" data-bg-src="/uploads/bg.jpg"></div>
+                     <div class="th-hero-bg" style="background-image: url('{{ asset('uploads/bg.jpg') }}')"></div>
                      <div class="container">
                         <div class="row align-items-end">
                            <div class="col-xl-7">
                               <div class="hero-style1">
                                  <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">Relax, <span class="text-themes">Relief</span>, Recover After a Long Day</h1>
                                  <div class="btn-group justify-content-xl-start justify-content-center" data-ani="slideinup" data-ani-delay="0.8s">
-                                    <a href="{{route('contact')}}" class="th-btn style1">Book an Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a> 
+                                    <a href="{{route('contact')}}" class="th-btn style1">Book an Appointment <i class="fa-solid fa-calendar-days ms-2"></i></a>
                                     <a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn th-border">Shop Massage Chairs <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                                 </div>
                               </div>
                            </div>
                            <div class="col-xl-5">
-                              {{-- <div class="hero-image" data-ani="slideinup" data-ani-delay="0.4s"><img src="/theme/assets/img/hero/hero-image-1.png" alt=""></div> --}}
+                              {{-- <div class="hero-image" data-ani="slideinup" data-ani-delay="0.4s"><img loading="lazy" decoding="async" src="/theme/assets/img/hero/hero-image-1.png" alt=""></div> --}}
                            </div>
                         </div>
                      </div>
@@ -34,11 +34,11 @@
          </div>
          <div class="scroll-down"><a href="#about-sec" class="hero-scroll-wrap"><span></span></a> <span class="title">Scroll</span></div>
          <div class="social-links">
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/WAWAFitnessCenter"><i class="fab fa-facebook-f"></i></a> 
-            <a href="https://x.com/WAWAfcKENYA"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/massage-chairs-kenya/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/254708666527"><i class="fab fa-whatsapp"></i></a>
+            <a href="{{ $siteSettings->instagram_url }}"><i class="fab fa-instagram"></i></a>
+            <a href="{{ $siteSettings->facebook_url }}"><i class="fab fa-facebook-f"></i></a>
+            <a href="{{ $siteSettings->x_url }}"><i class="fab fa-twitter"></i></a>
+            <a href="{{ $siteSettings->linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/{{ preg_replace("/\\D+/", "", $siteSettings->whatsapp_number ?: $siteSettings->phone) }}"><i class="fab fa-whatsapp"></i></a>
          </div>
       </div>
       {{-- <div class="position-relative space">
@@ -79,7 +79,7 @@
                   </div>
                   <div class="img-box1">
                      <div class="about-wrapper">
-                        <div class="img1"><img src="{{asset('uploads/homeL50.jpg')}}" alt="About"> <a href="https://www.youtube.com/watch?v=4nC9npHkqOg" class="play-btn popup-video"><i class="fa-solid fa-play"></i></a></div>
+                        <div class="img1"><img loading="lazy" decoding="async" src="{{asset('uploads/homeL50.jpg')}}" alt="About"> <a href="https://www.youtube.com/watch?v=4nC9npHkqOg" class="play-btn popup-video"><i class="fa-solid fa-play"></i></a></div>
                         <div class="">
                            <p class="fs-18 mb-30 wow fadeInUp" data-wow-delay=".1s">
                             <strong>Our advanced massage chair is perfectly suited for both commercial and personal use.</strong>
@@ -97,10 +97,10 @@
                            <div class="btn-group mt-40 wow fadeInUp" data-wow-delay=".4s">
                               <a href="{{route('about-us')}}" class="th-btn style2">More About Us <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                               <div class="call-info">
-                                 <div class="call-icon"><a href="tel:+00123456789"><i class="fa-solid fa-phone-volume"></i></a></div>
+                                 <div class="call-icon"><a href="tel:{{ preg_replace("/\\s+/", "", $siteSettings->phone) }}"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
+                                    <p class="call-link"><a href="tel:{{ $siteSettings->phone }}">Phone 1: {{ $siteSettings->phone }}</a> · <a href="tel:{{ $siteSettings->phone_2 }}">Phone 2: {{ $siteSettings->phone_2 }}</a></p>
                                  </div>
                               </div>
                            </div>
@@ -111,12 +111,12 @@
                <div class="col-xxl-4">
                   <div class="img-box2">
                      <div class="img-box-wrapp">
-                        <div class="img1 reveal chair-1"><img src="{{asset('uploads/Notes-on-using-massage-chairs.jpg')}}" alt="About"></div>
-                        <div class="img2 reveal chair-1"><img src="{{asset('uploads/Massage-chairs-give-life-a-sense-of-ceremony.jpeg')}}" alt="About"></div>
+                        <div class="img1 reveal chair-1"><img loading="lazy" decoding="async" src="{{asset('uploads/Notes-on-using-massage-chairs.jpg')}}" alt="About"></div>
+                        <div class="img2 reveal chair-1"><img loading="lazy" decoding="async" src="{{asset('uploads/Massage-chairs-give-life-a-sense-of-ceremony.jpeg')}}" alt="About"></div>
                      </div>
                      <div class="about-wrapp">
                         <div class="discount-wrapp">
-                           <div class="logo"><img src="{{asset('uploads/logo.png')}}" alt=""></div>
+                           <div class="logo"><img loading="lazy" decoding="async" src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt=""></div>
                            <div class="discount-tag"><span class="discount-anime">Wawa Fitness Center * Massage services *</span></div>
                         </div>
                      </div>
@@ -124,7 +124,7 @@
                </div>
             </div>
          </div>
-         <div class="shape-mockup" data-bottom="7%" data-left="0%"><img src="{{asset('theme/assets/img/shape/element-1.png')}}" alt=""></div>
+         <div class="shape-mockup" data-bottom="7%" data-left="0%"><img loading="lazy" decoding="async" src="{{asset('theme/assets/img/shape/element-1.png')}}" alt=""></div>
       </div>
       <section class="position-relative overflow-hidden space" data-bg-src="{{asset('theme/assets/img/bg/service_bg_1.jpg')}}" id="service-sec">
          <div class="container">
@@ -145,12 +145,12 @@
                      <div class="service-grid2 wow fadeInUp" data-wow-delay=".2s">
                         <div class="service-content">
                            <div class="box-wrapp">
-                              <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
+                              <div class="box-icon"><img loading="lazy" decoding="async" style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
                               <h3 class="box-title"><a href="{{route('contact')}}">Affordable full-body massage in 10 to 30-minute sessions.</a></h3>
                               <p class="box-text">Enjoy affordable full-body massage sessions tailored to your schedule, with flexible durations ranging from 10 to 30 minutes for ultimate relaxation and value.</p>
                            </div>
                            <div class="box-right-wrapp">
-                              <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
+                              <div class="box-img global-img"><img loading="lazy" decoding="async" style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
                               <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border"> Make Enquiry<i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
@@ -160,12 +160,12 @@
                      <div class="service-grid2 wow fadeInUp" data-wow-delay=".3s">
                         <div class="service-content">
                            <div class="box-wrapp">
-                              <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
+                              <div class="box-icon"><img loading="lazy" decoding="async" style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
                               <h3 class="box-title"><a href="{{url('/')}}/massage-chairs/4d-massage-chair">Selling massage chairs and spa massage chairs.</a></h3>
                               <p class="box-text">We offer a range of high-quality massage and spa chairs for sale, perfect for personal use or enhancing your wellness business.</p>
                            </div>
                            <div class="box-right-wrapp">
-                              <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/sadgsdg.jpg')}}" alt=""></div>
+                              <div class="box-img global-img"><img loading="lazy" decoding="async" style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/sadgsdg.jpg')}}" alt=""></div>
                               <div class="service-btn"><a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn black-border">Products <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
@@ -175,12 +175,12 @@
                      <div class="service-grid2 wow fadeInUp" data-wow-delay=".5s">
                         <div class="service-content">
                            <div class="box-wrapp">
-                              <div class="box-icon"><img style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
+                              <div class="box-icon"><img loading="lazy" decoding="async" style="width:100px" src="{{asset('theme/assets/img/icon/L50massage-chair.png')}}" alt="Icon"></div>
                               <h3 class="box-title"><a href="{{route('contact')}}">Hire massage chairs for corporate functions.</a></h3>
                               <p class="box-text">Enhance your events with our massage chair hire service—perfect for corporate functions, exhibitions, and wellness activations.</p>
                            </div>
                            <div class="box-right-wrapp">
-                             <div class="box-img global-img"><img style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
+                             <div class="box-img global-img"><img loading="lazy" decoding="async" style="width:300px; height:100%; object-fit:cover" src="{{asset('uploads/Choosing-the-right-massage-chair-is-important.jpg')}}" alt=""></div>
                               <div class="service-btn"><a href="{{route('contact')}}" class="th-btn black-border">Read More <i class="fa-regular fa-arrow-right ms-2"></i></a></div>
                            </div>
                         </div>
@@ -202,28 +202,28 @@
                   </div>
                   <div class="choose-item-wrap">
                      <div class="choose-item wow fadeInUp" data-wow-delay=".3s">
-                        <div class="box-icon"><img src="{{asset('theme/assets/img/icon/choose_1_1.svg')}}" alt="Icon"></div>
+                        <div class="box-icon"><img loading="lazy" decoding="async" src="{{asset('theme/assets/img/icon/choose_1_1.svg')}}" alt="Icon"></div>
                         <div class="media-body">
                            <h3 class="box-title">Expert Care</h3>
                            <p class="box-text">Our trained therapists and wellness assistants deliver personalized services with a professional touch.</p>
                         </div>
                      </div>
                      <div class="choose-item wow fadeInUp" data-wow-delay=".5s">
-                        <div class="box-icon"><img src="{{asset('theme/assets/img/icon/choose_1_2.svg')}}" alt="Icon"></div>
+                        <div class="box-icon"><img loading="lazy" decoding="async" src="{{asset('theme/assets/img/icon/choose_1_2.svg')}}" alt="Icon"></div>
                         <div class="media-body">
                            <h3 class="box-title"> Premium Equipment</h3>
                            <p class="box-text">We use top-quality massage chairs and wellness tools to ensure maximum comfort and effective results.</p>
                         </div>
                      </div>
                      <div class="choose-item wow fadeInUp" data-wow-delay=".7s">
-                        <div class="box-icon"><img src="{{asset('theme/assets/img/icon/choose_1_3.svg')}}" alt="Icon"></div>
+                        <div class="box-icon"><img loading="lazy" decoding="async" src="{{asset('theme/assets/img/icon/choose_1_3.svg')}}" alt="Icon"></div>
                         <div class="media-body">
                            <h3 class="box-title">Flexible & Affordable Packages</h3>
                            <p class="box-text">Whether it’s a 10-minute recharge or a full-hour session, our massage services are priced to suit every budget.</p>
                         </div>
                      </div>
                      <div class="choose-item wow fadeInUp" data-wow-delay=".9s">
-                        <div class="box-icon"><img src="{{asset('theme/assets/img/icon/choose_1_4.svg')}}" alt="Icon"></div>
+                        <div class="box-icon"><img loading="lazy" decoding="async" src="{{asset('theme/assets/img/icon/choose_1_4.svg')}}" alt="Icon"></div>
                         <div class="media-body">
                            <h3 class="box-title">Corporate & Personal Solutions</h3>
                            <p class="box-text">From individual sessions to event chair rentals, we cater to both personal relaxation and professional wellness needs.</p>
@@ -233,15 +233,15 @@
                </div>
                <div class="col-xxl-7">
                   <div class="choose-img-box">
-                     <div class="img1 wow fadeInLeft global-img" data-wow-delay=".3s"><img src="{{asset('/uploads/1.png')}}" alt=""></div>
-                     <div class="img2 wow fadeInRight global-img" data-wow-delay=".6s"><img src="{{asset('/uploads/2.png')}}" alt=""></div>
-                     <div class="img3 wow fadeInUp global-img" data-wow-delay=".9s"><img src="{{asset('/uploads/3.png')}}" alt=""></div>
+                     <div class="img1 wow fadeInLeft global-img" data-wow-delay=".3s"><img loading="lazy" decoding="async" src="{{asset('/uploads/1.png')}}" alt=""></div>
+                     <div class="img2 wow fadeInRight global-img" data-wow-delay=".6s"><img loading="lazy" decoding="async" src="{{asset('/uploads/2.png')}}" alt=""></div>
+                     <div class="img3 wow fadeInUp global-img" data-wow-delay=".9s"><img loading="lazy" decoding="async" src="{{asset('/uploads/3.png')}}" alt=""></div>
                   </div>
                </div>
             </div>
          </div>
-         <div class="shape-mockup" data-bottom="10%" data-right="25%"><img src="assets/img/shape/shape-1.png" alt=""></div>
-         <div class="shape-mockup jump" data-bottom="20%" data-right="0%"><img src="assets/img/shape/element-2.png" alt=""></div>
+         <div class="shape-mockup" data-bottom="10%" data-right="25%"><img loading="lazy" decoding="async" src="assets/img/shape/shape-1.png" alt=""></div>
+         <div class="shape-mockup jump" data-bottom="20%" data-right="0%"><img loading="lazy" decoding="async" src="assets/img/shape/element-2.png" alt=""></div>
       </div>
 
       <section class="video-area overflow-hidden space" data-bg-src="{{asset('uploads/bg.jpg')}}">
@@ -272,10 +272,10 @@
                            <div class="btn-group col-12">
                               <button class="th-btn style2 style-radius">Make Appointment <i class="fa-light fa-arrow-right-long ms-2"></i></button>
                               <div class="call-info">
-                                 <div class="call-icon"><a href="tel:+254 708 666 527"><i class="fa-solid fa-phone"></i></a></div>
+                                 <div class="call-icon"><a href="tel:{{ preg_replace("/\\s+/", "", $siteSettings->phone) }}"><i class="fa-solid fa-phone"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
+                                    <p class="call-link"><a href="tel:{{ $siteSettings->phone }}">Phone 1: {{ $siteSettings->phone }}</a> · <a href="tel:{{ $siteSettings->phone_2 }}">Phone 2: {{ $siteSettings->phone_2 }}</a></p>
                                  </div>
                               </div>
                            </div>
@@ -290,7 +290,7 @@
             </div>
          </div>
       </section>
-     
+
 
       <div class="marquee-area">
          <div class="marquee-content positive-relative overflow-hidden">
@@ -327,25 +327,25 @@
             </div>
          </div>
       </div>
-    
+
       <section class="download-area space overflow-hidden" data-bg-src="assets/img/bg/download-bg-1.png">
          <div class="container">
             <div class="row gy-5 align-items-center">
                <div class="col-xl-6">
                   <div class="download-img">
-                     <div class="img1"><img src="{{asset('uploads/1423477305.jpg')}}" alt="img"></div>
+                     <div class="img1"><img loading="lazy" decoding="async" src="{{asset('uploads/1423477305.jpg')}}" alt="img"></div>
                   </div>
                </div>
                <div class="col-xl-6">
                   <div class="ps-xl-4">
                      <div class="title-area mb-30 text-center text-xl-start pe-xl-5 me-xl-5">
-                       
+
                         <h2 class="sec-title text-anime-style-3">You had <span class="fw-normal"> a long day?</span> We got you!!!</h2>
                         <p class="fs-18 pe-xl-5 wow fadeInUp">
                             WAWA Fitness Center takes pride in providing therapeutic and relaxing full body massage using high quality human touch massage chairs.<br><br> We also hire and supply high professional, high quality therapeutic and luxury massage chairs and products. Our massage chairs improve health and comfort based on the combined theory of natural healing, physical therapy and acupressure by adjusting the body through a natural formula of a healthy posture which stimulates blood circulation, relieves stress and relaxes muscles, nerves and joints.
                         </p>
                      </div>
-                     <div class="btn-group download-btn mt-50 justify-content-center justify-content-xl-start wow fadeInUp" data-wow-delay=".2s"><a href="https://www.apple.com/app-store/"><img src="assets/img/icon/apple.svg" alt=""></a><a href="https://play.google.com/store/"><img src="assets/img/icon/google-play.svg" alt=""></a></div>
+                     <div class="btn-group download-btn mt-50 justify-content-center justify-content-xl-start wow fadeInUp" data-wow-delay=".2s"><a href="https://www.apple.com/app-store/"><img loading="lazy" decoding="async" src="assets/img/icon/apple.svg" alt=""></a><a href="https://play.google.com/store/"><img loading="lazy" decoding="async" src="assets/img/icon/google-play.svg" alt=""></a></div>
                   </div>
                </div>
             </div>
@@ -358,42 +358,42 @@
                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"476":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
                   <div class="swiper-wrapper" style="visibility: hidden">
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                      <div class="swiper-slide">
-                        <div class="brand-item"><a href="#"><img class="original" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"> <img class="gray" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"></a></div>
+                        <div class="brand-item"><a href="#"><img loading="lazy" decoding="async" class="original" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"> <img loading="lazy" decoding="async" class="gray" src="{{asset('theme/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo"></a></div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      
-  
+
+
       <section class="overflow-hidden space overflow-hidden" id="blog-sec">
          <div class="container">
             <div class="row justify-content-center">
@@ -409,13 +409,13 @@
                <div class="swiper th-slider has-shadow" id="blogSlider" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
                   <div class="swiper-wrapper">
                     <?php
-                       $Blogs = \App\Models\Blog::where('status', 1)->orderBy('created_at', 'desc')->take(6)->get();    
+                       $Blogs = \App\Models\Blog::where('status', 1)->orderBy('created_at', 'desc')->take(6)->get();
                     ?>
                     @foreach($Blogs as $blog)
                      <div class="swiper-slide">
                         <div class="blog-card wow fadeInUp">
                            <div class="box-img global-img">
-                              <img style="height:300px; width:100%; object-fit:cover;" src="{{url('/')}}/uploads/{{ $blog->image }}" alt="blog image">
+                              <img loading="lazy" decoding="async" style="height:300px; width:100%; object-fit:cover;" src="{{url('/')}}/uploads/{{ $blog->image }}" alt="blog image">
                            </div>
                            <div class="box-content">
                               <div class="blog-meta"><a href="{{ route('blogs.shows', $blog->slug) }}"><i class="fa-solid fa-user"></i>Erp Team {{ $blog->created_at->format('Y') }}</a> <a href="{{ route('blogs.shows', $blog->slug) }}"><i class="fa-solid fa-messages"></i>No Comment</a></div>

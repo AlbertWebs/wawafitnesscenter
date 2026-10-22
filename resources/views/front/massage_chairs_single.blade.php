@@ -59,7 +59,7 @@
                      </code>
                   
                      <div class="actions">
-                       <a href="https://wa.me/254708666527?text=Hello, I found {{$Chair->name}}, from your website, I would like to know more about it" class="th-btn btn-text"> Inquire Now  <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
+                       <a href="https://wa.me/{{ preg_replace("/\\D+/", "", $siteSettings->whatsapp_number ?: $siteSettings->phone) }}?text=Hello, I found {{$Chair->name}}, from your website, I would like to know more about it" class="th-btn btn-text"> Inquire Now  <i class="btn-text fa-light fa-arrow-right-long ms-2"></i></a>
                      </div>
                      
                   </div>

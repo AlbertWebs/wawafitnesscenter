@@ -136,10 +136,10 @@
                            <div class="btn-group mt-40 wow fadeInUp" data-wow-delay=".4s">
                               <a href="{{url('/')}}/massage-chairs/4d-massage-chair" class="th-btn style2">Our Products <i class="fa-light fa-arrow-right-long ms-2"></i></a>
                               <div class="call-info">
-                                 <div class="call-icon"><a href="tel:+00123456789"><i class="fa-solid fa-phone-volume"></i></a></div>
+                                 <div class="call-icon"><a href="tel:{{ preg_replace("/\\s+/", "", $siteSettings->phone) }}"><i class="fa-solid fa-phone-volume"></i></a></div>
                                  <div class="media-body">
                                     <span class="call-label">Get In Touch, Call Now</span>
-                                    <p class="call-link"><a href="tel:+254 708 666 527">+254 708 666 527</a></p>
+                                    <p class="call-link"><a href="tel:{{ $siteSettings->phone }}">Phone 1: {{ $siteSettings->phone }}</a> · <a href="tel:{{ $siteSettings->phone_2 }}">Phone 2: {{ $siteSettings->phone_2 }}</a></p>
                                  </div>
                               </div>
                            </div>
@@ -156,7 +156,7 @@
                      </div>
                      <div class="about-wrapp">
                         <div class="discount-wrapp">
-                           <div class="logo"><img src="{{asset('uploads/logo.png')}}" alt=""></div>
+                           <div class="logo"><img src="{{ !empty($siteSettings->logo) ? asset('storage/' . $siteSettings->logo) : asset('uploads/logo.png') }}" alt=""></div>
                            <div class="discount-tag"><span class="discount-anime">Wawa Fitness Center * Massage services *</span></div>
                         </div>
                      </div>
