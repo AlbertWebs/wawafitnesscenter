@@ -7,7 +7,7 @@
                         <ul>
                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:{{ $siteSettings->email }}">{{ $siteSettings->email }}</a></li>
                            <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span>{{ $siteSettings->address }}</span></li>
-                            <li class="d-none d-md-inline-block"><i class="fa-solid fa-phone"></i> <span><a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a> <a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a></span></li>
+                            <li class="d-none d-md-inline-block"><i class="fa-solid fa-phone"></i> <span><a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a> / <a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a></span></li>
                         </ul>
                      </div>
                   </div>
