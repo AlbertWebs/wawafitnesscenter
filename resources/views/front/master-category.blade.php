@@ -227,7 +227,7 @@
                   <div class="col-xl-4">
                      <div class="footer-widget-about">
                         <div class="th-widget-about">
-                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a> · <a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a></span></p>
+                           <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i> <span><a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a> <a class="text-inherit" href="tel:{{ preg_replace('/\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a></span></p>
                            <p class="footer-info"><i class="fa-sharp fa-solid fa-envelope"></i><span> <a class="text-inherit" href="mailto:{{ $siteSettings->email }}">{{ $siteSettings->email }}</a></span></p>
                            <p class="footer-info"><i class="fas fa-map-marker-alt"></i>{{ $siteSettings->address }}</p>
                            <p class="footer-info"><i class="far fa-clock"></i>{{ $siteSettings->opening_hours }}</p>
