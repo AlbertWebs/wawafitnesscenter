@@ -65,7 +65,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="phone">Phone number 1</label>
-                                <input id="phone" type="tel" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone', $setting->phone) }}" placeholder="0722595395">
+                                <input id="phone" type="tel" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone', $setting->phone) }}" placeholder="+254 722 595 395">
                                 @error('phone')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                         </div>

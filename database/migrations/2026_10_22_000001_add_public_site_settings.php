@@ -34,8 +34,8 @@ return new class extends Migration
         });
 
         DB::table('site_settings')
-            ->whereIn('phone', ['+254 722 595 395', '+254722595395'])
-            ->update(['phone' => '0722595395']);
+            ->where('phone', '0722595395')
+            ->update(['phone' => '+254 722 595 395']);
         DB::table('site_settings')
             ->whereNull('phone_2')
             ->update(['phone_2' => '+254 708 666 527']);

@@ -20,7 +20,7 @@ class SiteSetting extends Model
             'sitename' => 'WAWA Fitness Center',
             'url' => 'https://wawafitnesscenter.co.ke',
             'email' => 'info@wawafitnesscenter.co.ke',
-            'phone' => '0722595395',
+            'phone' => '+254 722 595 395',
             'phone_2' => '+254 708 666 527',
             'whatsapp_number' => '+254 722 595 395',
             'address' => 'JKIA Terminal 1B International Departures, Gate 11',
