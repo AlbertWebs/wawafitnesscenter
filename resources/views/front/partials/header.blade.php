@@ -6,7 +6,7 @@
                      <div class="header-links">
                         <ul>
                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:{{ $siteSettings->email }}">{{ $siteSettings->email }}</a></li>
-                           <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span>{{ $siteSettings->address }}</span></li>
+                           <li class="d-none d-md-inline-block"><i class="fa-solid fa-location-dot"></i> <span><a href="https://www.google.com/maps/place/WAWA+Fitness+Center/@-1.3306552,36.9237889,17z/data=!3m1!4b1!4m6!3m5!1s0x182f22b4316f60d9:0x4da71135e437ed3c!8m2!3d-1.3306552!4d36.9237889!16s%2Fg%2F11b72326l6?entry=ttu&amp;g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">{{ $siteSettings->address }}</a></span></li>
                             <li class="d-none d-md-inline-block"><i class="fa-solid fa-phone"></i> <span><a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone) }}">{{ $siteSettings->phone }}</a> / <a href="tel:{{ preg_replace('/\\s+/', '', $siteSettings->phone_2) }}">{{ $siteSettings->phone_2 }}</a></span></li>
                         </ul>
                      </div>
